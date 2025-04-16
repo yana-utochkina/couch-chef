@@ -1,0 +1,117 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.2.12">
+  <diagram name="Сторінка-1" id="XuYEo6VHBPti1Z79K7P3">
+    <mxGraphModel dx="780" dy="402" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="fJNCk9A5ef_T6f4IatNx-38" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="490" width="520" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="fJNCk9A5ef_T6f4IatNx-18" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="60" width="480" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="fJNCk9A5ef_T6f4IatNx-16" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="fJNCk9A5ef_T6f4IatNx-1" target="fJNCk9A5ef_T6f4IatNx-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fJNCk9A5ef_T6f4IatNx-1" value="User" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="370" y="370" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fJNCk9A5ef_T6f4IatNx-4" value="View cuisines" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="240" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="fJNCk9A5ef_T6f4IatNx-6" value="View ingradients for recipies" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="180" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="fJNCk9A5ef_T6f4IatNx-7" value="View categories of recipies" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="150" width="110" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="fJNCk9A5ef_T6f4IatNx-8" value="Get daily advises from AI for healthy eating" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="210" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="fJNCk9A5ef_T6f4IatNx-9" value="Search recipies by ingradients" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="110" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="fJNCk9A5ef_T6f4IatNx-10" value="View recipies" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="80" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="fJNCk9A5ef_T6f4IatNx-11" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="fJNCk9A5ef_T6f4IatNx-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="360" as="sourcePoint" />
+            <mxPoint x="490" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fJNCk9A5ef_T6f4IatNx-12" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="fJNCk9A5ef_T6f4IatNx-9">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="360" as="sourcePoint" />
+            <mxPoint x="492" y="172" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fJNCk9A5ef_T6f4IatNx-13" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.056;entryY=0.709;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="fJNCk9A5ef_T6f4IatNx-1" target="fJNCk9A5ef_T6f4IatNx-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="410" y="230" as="sourcePoint" />
+            <mxPoint x="502" y="182" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fJNCk9A5ef_T6f4IatNx-14" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.361;entryY=0.986;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="fJNCk9A5ef_T6f4IatNx-1" target="fJNCk9A5ef_T6f4IatNx-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="180" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fJNCk9A5ef_T6f4IatNx-15" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.968;entryY=0.705;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="fJNCk9A5ef_T6f4IatNx-1" target="fJNCk9A5ef_T6f4IatNx-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="360" y="210" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fJNCk9A5ef_T6f4IatNx-19" value="&#39;Couch Chef&#39; website" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="170" y="30" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fJNCk9A5ef_T6f4IatNx-32" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" target="fJNCk9A5ef_T6f4IatNx-31">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="530" y="460" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fJNCk9A5ef_T6f4IatNx-33" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="fJNCk9A5ef_T6f4IatNx-26">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="500" y="460" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fJNCk9A5ef_T6f4IatNx-21" value="Admin" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="500" y="380" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fJNCk9A5ef_T6f4IatNx-26" value="Get/Add/Edit/Delete" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="540" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="fJNCk9A5ef_T6f4IatNx-27" value="Ingradients" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="520" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="fJNCk9A5ef_T6f4IatNx-35" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="fJNCk9A5ef_T6f4IatNx-28" target="fJNCk9A5ef_T6f4IatNx-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fJNCk9A5ef_T6f4IatNx-28" value="Cuisines" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="590" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="fJNCk9A5ef_T6f4IatNx-36" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.207;entryY=0.927;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="fJNCk9A5ef_T6f4IatNx-29" target="fJNCk9A5ef_T6f4IatNx-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fJNCk9A5ef_T6f4IatNx-29" value="Categories" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="665" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="fJNCk9A5ef_T6f4IatNx-37" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="fJNCk9A5ef_T6f4IatNx-30" target="fJNCk9A5ef_T6f4IatNx-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fJNCk9A5ef_T6f4IatNx-30" value="Recipies" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="413" y="665" width="110" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="fJNCk9A5ef_T6f4IatNx-31" value="Get/Edit/Delete daily advises from AI for healthy eating" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="530" y="530" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fJNCk9A5ef_T6f4IatNx-34" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.025;entryY=0.352;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="fJNCk9A5ef_T6f4IatNx-27" target="fJNCk9A5ef_T6f4IatNx-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fJNCk9A5ef_T6f4IatNx-39" value="&#39;Admin Couch Chef&#39; website" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="180" y="460" width="180" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
