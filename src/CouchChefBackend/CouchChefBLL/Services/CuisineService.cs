@@ -1,50 +1,37 @@
-﻿using AutoMapper;
-using CouchChefBLL.Interfaces;
-using CouchChefBLL.Models;
-using CouchChefDAL.Interfaces;
+﻿using CouchChefBLL.Interfaces;
+using CouchChefDAL.Entities;
 
-namespace CouchChefBLL.Services
+namespace CouchChefBLL.Services;
+
+public class CuisineService : ICuisineService
 {
-    public class CuisineService : ICuisineService
+    public Task<int> AddAsync(Cuisine entity)
     {
-        private readonly IUnitOfWork _unitOfWork;
-        private readonly IMapper _mapper;
+        throw new NotImplementedException();
+    }
 
-        public CuisineService(IUnitOfWork unitOfWork, IMapper mapper)
-        {
-            _unitOfWork = unitOfWork;
-            _mapper = mapper;
-        }
+    public Task DeleteAsync(Cuisine entity)
+    {
+        throw new NotImplementedException();
+    }
 
+    public Task DeleteByIdAsync(int id)
+    {
+        throw new NotImplementedException();
+    }
 
-        public Task<int> AddAsync(CuisineModel entity)
-        {
-            throw new NotImplementedException();
-        }
+    public Task<IEnumerable<Cuisine>> GetAllAsync()
+    {
+        throw new NotImplementedException();
+    }
 
-        public Task DeleteAsync(CuisineModel entity)
-        {
-            throw new NotImplementedException();
-        }
+    public Task<Cuisine> GetByIdAsync(int id)
+    {
+        throw new NotImplementedException();
+    }
 
-        public Task DeleteByIdAsync(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<IEnumerable<CuisineModel>> GetAllAsync()
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<CuisineModel> GetByIdAsync(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task UpdateAsync(CuisineModel entity)
-        {
-            throw new NotImplementedException();
-        }
+    public Task UpdateAsync(Cuisine entity)
+    {
+        throw new NotImplementedException();
     }
 }

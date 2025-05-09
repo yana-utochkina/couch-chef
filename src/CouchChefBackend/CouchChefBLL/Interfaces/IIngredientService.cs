@@ -1,8 +1,7 @@
-﻿using CouchChefBLL.Models;
+﻿using CouchChefDAL.Entities;
 
-namespace CouchChefBLL.Interfaces
+namespace CouchChefBLL.Interfaces;
+
+public interface IIngredientService : ICrud<Ingredient>
 {
-    public interface IIngredientService : ICrud<IngredientModel>
-    {
-    }
 }

@@ -1,49 +1,37 @@
-﻿using AutoMapper;
-using CouchChefBLL.Interfaces;
-using CouchChefBLL.Models;
-using CouchChefDAL.Interfaces;
+﻿using CouchChefBLL.Interfaces;
+using CouchChefDAL.Entities;
 
-namespace CouchChefBLL.Services
+namespace CouchChefBLL.Services;
+
+public class CategoryService : ICategoryService
 {
-    public class CategoryService : ICategoryService
+    public Task<int> AddAsync(Category entity)
     {
-        private readonly IUnitOfWork _unitOfWork;
-        private readonly IMapper _mapper;
+        throw new NotImplementedException();
+    }
 
-        public CategoryService(IUnitOfWork unitOfWork, IMapper mapper)
-        {
-            _unitOfWork = unitOfWork;
-            _mapper = mapper;
-        }
+    public Task DeleteAsync(Category entity)
+    {
+        throw new NotImplementedException();
+    }
 
-        public Task<int> AddAsync(CategoryModel entity)
-        {
-            throw new NotImplementedException();
-        }
+    public Task DeleteByIdAsync(int id)
+    {
+        throw new NotImplementedException();
+    }
 
-        public Task DeleteAsync(CategoryModel entity)
-        {
-            throw new NotImplementedException();
-        }
+    public Task<IEnumerable<Category>> GetAllAsync()
+    {
+        throw new NotImplementedException();
+    }
 
-        public Task DeleteByIdAsync(int id)
-        {
-            throw new NotImplementedException();
-        }
+    public Task<Category> GetByIdAsync(int id)
+    {
+        throw new NotImplementedException();
+    }
 
-        public Task<IEnumerable<CategoryModel>> GetAllAsync()
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<CategoryModel> GetByIdAsync(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task UpdateAsync(CategoryModel entity)
-        {
-            throw new NotImplementedException();
-        }
+    public Task UpdateAsync(Category entity)
+    {
+        throw new NotImplementedException();
     }
 }

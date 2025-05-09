@@ -1,49 +1,37 @@
-﻿using AutoMapper;
-using CouchChefBLL.Interfaces;
-using CouchChefBLL.Models;
-using CouchChefDAL.Interfaces;
+﻿using CouchChefBLL.Interfaces;
+using CouchChefDAL.Entities;
 
-namespace CouchChefBLL.Services
+namespace CouchChefBLL.Services;
+
+public class IngredientService : IIngredientService
 {
-    public class IngredientService : IIngredientService
+    public Task<int> AddAsync(Ingredient entity)
     {
-        private readonly IUnitOfWork _unitOfWork;
-        private readonly IMapper _mapper;
+        throw new NotImplementedException();
+    }
 
-        public IngredientService(IUnitOfWork unitOfWork, IMapper mapper)
-        {
-            _unitOfWork = unitOfWork;
-            _mapper = mapper;
-        }
+    public Task DeleteAsync(Ingredient entity)
+    {
+        throw new NotImplementedException();
+    }
 
-        public Task<int> AddAsync(IngredientModel entity)
-        {
-            throw new NotImplementedException();
-        }
+    public Task DeleteByIdAsync(int id)
+    {
+        throw new NotImplementedException();
+    }
 
-        public Task DeleteAsync(IngredientModel entity)
-        {
-            throw new NotImplementedException();
-        }
+    public Task<IEnumerable<Ingredient>> GetAllAsync()
+    {
+        throw new NotImplementedException();
+    }
 
-        public Task DeleteByIdAsync(int id)
-        {
-            throw new NotImplementedException();
-        }
+    public Task<Ingredient> GetByIdAsync(int id)
+    {
+        throw new NotImplementedException();
+    }
 
-        public Task<IEnumerable<IngredientModel>> GetAllAsync()
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<IngredientModel> GetByIdAsync(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task UpdateAsync(IngredientModel entity)
-        {
-            throw new NotImplementedException();
-        }
+    public Task UpdateAsync(Ingredient entity)
+    {
+        throw new NotImplementedException();
     }
 }

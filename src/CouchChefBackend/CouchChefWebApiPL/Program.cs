@@ -1,8 +1,6 @@
-using CouchChefBLL.Configurations;
 using CouchChefBLL.Interfaces;
 using CouchChefBLL.Services;
 using CouchChefDAL.Data;
-using CouchChefDAL.Interfaces;
 using CouchChefWebApiPL;
 using Microsoft.EntityFrameworkCore;
 
@@ -18,8 +16,6 @@ builder.Services.AddDbContext<CouchChefDbContext>(option =>
     }
 );
 
-builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
-builder.Services.AddAutoMapper(typeof(CouchChefAutoMapperProfile));
 builder.Services.AddTransient<IAdviseService, AdviseService>();
 builder.Services.AddTransient<ICategoryService, CategoryService>();
 builder.Services.AddTransient<ICuisineService, CuisineService>();

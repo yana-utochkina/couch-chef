@@ -115,4 +115,8 @@ UpgradeLog*.XML
 src/.vs/config/applicationhost.config
 
 # JetBrains Rider's auto generated files
+<<<<<<< Updated upstream
 .idea/
+=======
+.idea/
+>>>>>>> Stashed changes

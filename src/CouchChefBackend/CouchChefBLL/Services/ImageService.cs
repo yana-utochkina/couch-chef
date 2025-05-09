@@ -1,49 +1,37 @@
-﻿using AutoMapper;
-using CouchChefBLL.Interfaces;
-using CouchChefBLL.Models;
-using CouchChefDAL.Interfaces;
+﻿using CouchChefBLL.Interfaces;
+using CouchChefDAL.Entities;
 
-namespace CouchChefBLL.Services
+namespace CouchChefBLL.Services;
+
+public class ImageService : IImageService
 {
-    public class ImageService : IImageService
+    public Task<int> AddAsync(Image entity)
     {
-        private readonly IUnitOfWork _unitOfWork;
-        private readonly IMapper _mapper;
+        throw new NotImplementedException();
+    }
 
-        public ImageService(IUnitOfWork unitOfWork, IMapper mapper)
-        {
-            _unitOfWork = unitOfWork;
-            _mapper = mapper;
-        }
+    public Task DeleteAsync(Image entity)
+    {
+        throw new NotImplementedException();
+    }
 
-        public Task<int> AddAsync(ImageModel entity)
-        {
-            throw new NotImplementedException();
-        }
+    public Task DeleteByIdAsync(int id)
+    {
+        throw new NotImplementedException();
+    }
 
-        public Task DeleteAsync(ImageModel entity)
-        {
-            throw new NotImplementedException();
-        }
+    public Task<IEnumerable<Image>> GetAllAsync()
+    {
+        throw new NotImplementedException();
+    }
 
-        public Task DeleteByIdAsync(int id)
-        {
-            throw new NotImplementedException();
-        }
+    public Task<Image> GetByIdAsync(int id)
+    {
+        throw new NotImplementedException();
+    }
 
-        public Task<IEnumerable<ImageModel>> GetAllAsync()
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<ImageModel> GetByIdAsync(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task UpdateAsync(ImageModel entity)
-        {
-            throw new NotImplementedException();
-        }
+    public Task UpdateAsync(Image entity)
+    {
+        throw new NotImplementedException();
     }
 }

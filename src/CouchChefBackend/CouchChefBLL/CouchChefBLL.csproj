@@ -10,4 +10,8 @@
     <ProjectReference Include="..\CouchChefDAL\CouchChefDAL.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Configurations\" />
+  </ItemGroup>
+
 </Project>

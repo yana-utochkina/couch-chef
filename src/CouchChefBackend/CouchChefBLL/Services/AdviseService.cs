@@ -1,49 +1,37 @@
-﻿using AutoMapper;
-using CouchChefBLL.Interfaces;
-using CouchChefBLL.Models;
-using CouchChefDAL.Interfaces;
+﻿using CouchChefBLL.Interfaces;
+using CouchChefDAL.Entities;
 
-namespace CouchChefBLL.Services
+namespace CouchChefBLL.Services;
+
+public class AdviseService : IAdviseService
 {
-    public class AdviseService : IAdviseService
+    public Task<int> AddAsync(Advise entity)
     {
-        private readonly IUnitOfWork _unitOfWork;
-        private readonly IMapper _mapper;
+        throw new NotImplementedException();
+    }
 
-        public AdviseService(IUnitOfWork unitOfWork, IMapper mapper)
-        {
-            _unitOfWork = unitOfWork;
-            _mapper = mapper;
-        }
+    public Task DeleteAsync(Advise entity)
+    {
+        throw new NotImplementedException();
+    }
 
-        public Task<int> AddAsync(AdviseModel entity)
-        {
-            throw new NotImplementedException();
-        }
+    public Task DeleteByIdAsync(int id)
+    {
+        throw new NotImplementedException();
+    }
 
-        public Task DeleteAsync(AdviseModel entity)
-        {
-            throw new NotImplementedException();
-        }
+    public Task<IEnumerable<Advise>> GetAllAsync()
+    {
+        throw new NotImplementedException();
+    }
 
-        public Task DeleteByIdAsync(int id)
-        {
-            throw new NotImplementedException();
-        }
+    public Task<Advise> GetByIdAsync(int id)
+    {
+        throw new NotImplementedException();
+    }
 
-        public Task<IEnumerable<AdviseModel>> GetAllAsync()
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<AdviseModel> GetByIdAsync(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task UpdateAsync(AdviseModel entity)
-        {
-            throw new NotImplementedException();
-        }
+    public Task UpdateAsync(Advise entity)
+    {
+        throw new NotImplementedException();
     }
 }

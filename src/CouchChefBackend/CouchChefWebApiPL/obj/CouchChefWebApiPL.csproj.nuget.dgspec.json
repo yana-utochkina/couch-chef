@@ -187,6 +187,9 @@
             "projectReferences": {
               "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefBLL\\CouchChefBLL.csproj": {
                 "projectPath": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefBLL\\CouchChefBLL.csproj"
+              },
+              "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefDAL\\CouchChefDAL.csproj": {
+                "projectPath": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefDAL\\CouchChefDAL.csproj"
               }
             }
           }
@@ -207,6 +210,12 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.15, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[8.0.15, )"
