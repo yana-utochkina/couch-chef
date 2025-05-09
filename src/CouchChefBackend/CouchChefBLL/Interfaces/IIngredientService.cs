@@ -2,6 +2,6 @@
 
 namespace CouchChefBLL.Interfaces;
 
-public interface IIngredientService : ICrud<Ingredient>
+public interface IIngredientService
 {
 }

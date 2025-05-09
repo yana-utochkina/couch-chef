@@ -2,6 +2,6 @@
 
 namespace CouchChefBLL.Interfaces;
 
-public interface IImageService : ICrud<Image>
+public interface IImageService
 {
 }

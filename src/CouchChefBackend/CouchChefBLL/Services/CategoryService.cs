@@ -1,37 +1,37 @@
-﻿using CouchChefBLL.Interfaces;
+﻿using CouchChefBLL.DTOs;
+using CouchChefBLL.Interfaces;
+using CouchChefDAL.Data;
 using CouchChefDAL.Entities;
 
 namespace CouchChefBLL.Services;
 
 public class CategoryService : ICategoryService
 {
-    public Task<int> AddAsync(Category entity)
+    private readonly CouchChefDbContext _context;
+    public CategoryService(CouchChefDbContext context)
     {
-        throw new NotImplementedException();
+        _context = context;
     }
 
-    public Task DeleteAsync(Category entity)
+    public async Task<int> AddCategoryAsync(CategoryDTO categoryDTO)
     {
-        throw new NotImplementedException();
+        var category = new Category
+        {
+            Name = categoryDTO.Name,
+            Id = 0
+        };
+        await _context.Categories.AddAsync(category);
+        await _context.SaveChangesAsync();
+        return category.Id;
     }
 
-    public Task DeleteByIdAsync(int id)
+    public async Task<CategoryDTO> GetCategoryByIdAsync(int id)
     {
-        throw new NotImplementedException();
-    }
-
-    public Task<IEnumerable<Category>> GetAllAsync()
-    {
-        throw new NotImplementedException();
-    }
-
-    public Task<Category> GetByIdAsync(int id)
-    {
-        throw new NotImplementedException();
-    }
-
-    public Task UpdateAsync(Category entity)
-    {
-        throw new NotImplementedException();
+        var category = await _context.Categories.FindAsync(id);
+        if (category is null)
+        {
+            throw new KeyNotFoundException($"Category with id {id} not found.");
+        }
+        return new CategoryDTO { Id = category.Id, Name = category.Name };
     }
 }

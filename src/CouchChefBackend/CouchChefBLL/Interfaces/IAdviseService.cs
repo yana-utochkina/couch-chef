@@ -2,6 +2,6 @@
 
 namespace CouchChefBLL.Interfaces;
 
-public interface IAdviseService : ICrud<Advise>
+public interface IAdviseService
 {
 }
