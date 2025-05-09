@@ -1,0 +1,6 @@
+@CouchChefWebApiPL_HostAddress = http://localhost:5115
+
+GET {{CouchChefWebApiPL_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
