@@ -1,11 +1,10 @@
-﻿using CouchChefBLL.Interfaces;
-using CouchChefBLL.Services;
-using Microsoft.AspNetCore.Http;
+﻿using CouchChefBLL.DTOs;
+using CouchChefBLL.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CouchChefWebApiPL.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/ingredients")]
     [ApiController]
     public class IngredientController : ControllerBase
     {
@@ -14,6 +13,21 @@ namespace CouchChefWebApiPL.Controllers
         public IngredientController(IIngredientService ingredientService)
         {
             _ingredientService = ingredientService;
+        }
+
+        [HttpPost]
+        public async Task<ActionResult<IngredientDTO>> CreateIngredient([FromBody] IngredientDTO ingredientDTO)
+        {
+            try
+            {
+                int id = await _ingredientService.AddIngredientAsync(ingredientDTO);
+                ingredientDTO = await _ingredientService.GetIngredientAsync(id);
+                return Ok(ingredientDTO);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
     }
 }

@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CouchChefDAL.Migrations
 {
     [DbContext(typeof(CouchChefDbContext))]
-    [Migration("20250509130612_Initial")]
+    [Migration("20250510080746_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -35,7 +35,7 @@ namespace CouchChefDAL.Migrations
 
                     b.Property<string>("FullText")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateOnly>("PublicationDate")
                         .ValueGeneratedOnAdd()
@@ -80,7 +80,7 @@ namespace CouchChefDAL.Migrations
 
                     b.Property<string>("Description")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -125,7 +125,7 @@ namespace CouchChefDAL.Migrations
                         .HasColumnType("real");
 
                     b.Property<string>("Description")
-                        .HasColumnType("text");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<float>("Fat")
                         .HasColumnType("real");
@@ -163,7 +163,7 @@ namespace CouchChefDAL.Migrations
 
                     b.Property<string>("Directions")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("ImageId")
                         .HasColumnType("int");

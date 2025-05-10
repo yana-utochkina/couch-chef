@@ -1,8 +1,11 @@
+using CouchChefBLL.Configurations;
 using CouchChefBLL.Interfaces;
 using CouchChefBLL.Services;
 using CouchChefDAL.Data;
 using CouchChefWebApiPL;
+using CouchChefWebApiPL.Configurations;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,7 +26,17 @@ builder.Services.AddTransient<IImageService, ImageService>();
 builder.Services.AddTransient<IIngredientService, IngredientService>();
 builder.Services.AddTransient<IRecipeService, RecipeService>();
 
+builder.Services.Configure<StaticFileSettings>(builder.Configuration.GetSection(SettingStrings.StaticFilesSection));
 
+if (builder.Configuration[SettingStrings.ImagesSetting] == "local")
+{
+    builder.Services.AddTransient<IStaticFileService, StaticFileService>(
+        serviceProvider => new StaticFileService(
+            serviceProvider.GetRequiredService<IOptions<StaticFileSettings>>(),
+            serviceProvider.GetService<IWebHostEnvironment>().WebRootPath
+            )
+        );
+}
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -40,6 +53,10 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+
+app.UseStaticFiles();
+
+app.MigrateDatabase();
 
 app.MapControllers();
 

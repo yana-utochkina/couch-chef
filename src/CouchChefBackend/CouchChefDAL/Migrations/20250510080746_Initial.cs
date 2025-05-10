@@ -19,7 +19,7 @@ namespace CouchChefDAL.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     PublicationDate = table.Column<DateOnly>(type: "date", nullable: false, defaultValueSql: "CAST(GETDATE() AS date)"),
                     ShortText = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false),
-                    FullText = table.Column<string>(type: "text", nullable: false)
+                    FullText = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -46,7 +46,7 @@ namespace CouchChefDAL.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false),
-                    Description = table.Column<string>(type: "text", nullable: false)
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -74,7 +74,7 @@ namespace CouchChefDAL.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false),
-                    Description = table.Column<string>(type: "text", nullable: true),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     ImageId = table.Column<int>(type: "int", nullable: true),
                     Protein = table.Column<float>(type: "real", nullable: false),
                     Fat = table.Column<float>(type: "real", nullable: false),
@@ -102,7 +102,7 @@ namespace CouchChefDAL.Migrations
                     PrepareTime = table.Column<TimeOnly>(type: "time", nullable: false),
                     TotalTime = table.Column<TimeOnly>(type: "time", nullable: false),
                     Servings = table.Column<int>(type: "int", nullable: false),
-                    Directions = table.Column<string>(type: "text", nullable: false),
+                    Directions = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     ImageId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>

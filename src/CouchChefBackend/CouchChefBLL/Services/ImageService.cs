@@ -1,37 +1,68 @@
-﻿using CouchChefBLL.Interfaces;
+﻿using CouchChefBLL.DTOs;
+using CouchChefBLL.Interfaces;
+using CouchChefDAL.Data;
 using CouchChefDAL.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace CouchChefBLL.Services;
 
 public class ImageService : IImageService
 {
-    public Task<int> AddAsync(Image entity)
+    private readonly CouchChefDbContext _context;
+    private readonly IStaticFileService _fileServices;
+    public ImageService(CouchChefDbContext context, IStaticFileService fileService)
     {
-        throw new NotImplementedException();
+        _context = context;
+        _fileServices = fileService;
     }
 
-    public Task DeleteAsync(Image entity)
+    public async Task<int> AddImageAsync(ImageDTO imageDTO)
     {
-        throw new NotImplementedException();
+        var image = new Image
+        {
+            Id = 0,
+            Path = imageDTO.Path,
+            AlternativeText = imageDTO.AlternativeText,
+        };
+        await _context.Images.AddAsync(image);
+        await _context.SaveChangesAsync();
+        return image.Id;
     }
 
-    public Task DeleteByIdAsync(int id)
+    public async Task DeleteImageAsync(int id)
     {
-        throw new NotImplementedException();
+        var image = await GetImageByIdAsync(id);
+        _fileServices.Remove(image.Path);
+        _context.Remove(image);
+        await _context.SaveChangesAsync();
     }
 
-    public Task<IEnumerable<Image>> GetAllAsync()
+    public async Task<ImageDTO> GetImageAsync(int id)
     {
-        throw new NotImplementedException();
+        var image = await GetImageByIdAsync(id);
+        var imageDTO = new ImageDTO
+        {
+            Id = image.Id,
+            Path = image.Path,
+            AlternativeText = image.AlternativeText,
+        };
+        return imageDTO;
     }
 
-    public Task<Image> GetByIdAsync(int id)
+    public async Task UpdateImageAsync(int id, string alternativeText)
     {
-        throw new NotImplementedException();
+        var image = await GetImageByIdAsync(id);
+        image.AlternativeText = alternativeText;
+        await _context.SaveChangesAsync();
     }
 
-    public Task UpdateAsync(Image entity)
+    private async Task<Image> GetImageByIdAsync(int id)
     {
-        throw new NotImplementedException();
+        var image = await _context.Images.FirstOrDefaultAsync(x => x.Id == id);
+        if (image is null)
+        {
+            throw new KeyNotFoundException($"Image with id {id} not found.");
+        }
+        return image;
     }
 }

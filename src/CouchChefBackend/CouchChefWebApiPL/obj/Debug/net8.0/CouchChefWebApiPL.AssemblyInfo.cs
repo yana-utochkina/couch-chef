@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("1832e8c9-0168-45c6-867d-487e7353de3b")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("CouchChefWebApiPL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bcfd4c0f021792d300dd1bebc25116a63d96107c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+711c7cd66bd79bd259a652789a8736a7e40ae970")]
 [assembly: System.Reflection.AssemblyProductAttribute("CouchChefWebApiPL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CouchChefWebApiPL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

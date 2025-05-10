@@ -1,37 +1,81 @@
-﻿using CouchChefBLL.Interfaces;
+﻿using CouchChefBLL.DTOs;
+using CouchChefBLL.Interfaces;
+using CouchChefDAL.Data;
 using CouchChefDAL.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace CouchChefBLL.Services;
 
 public class CuisineService : ICuisineService
 {
-    public Task<int> AddAsync(Cuisine entity)
+    private readonly CouchChefDbContext _context;
+
+    public CuisineService(CouchChefDbContext context)
     {
-        throw new NotImplementedException();
+        _context = context;
     }
 
-    public Task DeleteAsync(Cuisine entity)
+    public async Task<int> AddCuisineAsync(CuisineDTO cuisineDTO)
     {
-        throw new NotImplementedException();
+        var cuisine = new Cuisine
+        {
+            Id = 0,
+            Name = cuisineDTO.Name,
+            Description = cuisineDTO.Description
+        };
+        await _context.Cuisines.AddAsync(cuisine);
+        await _context.SaveChangesAsync();
+        return cuisine.Id;
     }
 
-    public Task DeleteByIdAsync(int id)
+    public async Task DeleteCuisineByIdAsync(int id)
     {
-        throw new NotImplementedException();
+        var cuisine = await GetCuisineByIdAsync(id);
+        _context.Remove(cuisine);
+        await _context.SaveChangesAsync();
     }
 
-    public Task<IEnumerable<Cuisine>> GetAllAsync()
+    public async Task<List<CuisineDTO>> GelAllCuisinesAsync()
     {
-        throw new NotImplementedException();
+        var cuisines = await _context.Cuisines.ToListAsync();
+        var cuisineDTOs = cuisines.Select(x => new CuisineDTO
+        {
+            Id = x.Id,
+            Name = x.Name,
+            Description = x.Description
+        }).ToList();
+        return cuisineDTOs;
     }
 
-    public Task<Cuisine> GetByIdAsync(int id)
+    public async Task<CuisineDTO> GetCuisineAsync(int id)
     {
-        throw new NotImplementedException();
+        var cuisine = await GetCuisineByIdAsync(id);
+        CuisineDTO cuisineDTO = new CuisineDTO
+        {
+            Id = cuisine.Id,
+            Name = cuisine.Name,
+            Description = cuisine.Description
+        };
+        return cuisineDTO;
     }
 
-    public Task UpdateAsync(Cuisine entity)
+    public async Task UpdateCuisineAsync(int id, CuisineDTO cuisineDTO)
     {
-        throw new NotImplementedException();
+        var cuisine = await GetCuisineByIdAsync(id);
+        cuisine.Name = cuisineDTO.Name;
+        cuisine.Description = cuisineDTO.Description;
+        await _context.SaveChangesAsync();
     }
+
+    private async Task<Cuisine> GetCuisineByIdAsync(int id)
+    {
+        var cuisine = await _context.Cuisines.FirstOrDefaultAsync(x => x.Id == id);
+        if (cuisine is null)
+        {
+            throw new KeyNotFoundException($"Cuisine with id {id} not found.");
+        }
+        return cuisine;
+    }
+
+
 }

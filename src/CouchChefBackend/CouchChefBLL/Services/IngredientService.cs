@@ -1,36 +1,25 @@
-﻿using CouchChefBLL.Interfaces;
+﻿using CouchChefBLL.DTOs;
+using CouchChefBLL.Interfaces;
+using CouchChefDAL.Data;
 using CouchChefDAL.Entities;
 
 namespace CouchChefBLL.Services;
 
 public class IngredientService : IIngredientService
 {
-    public Task<int> AddAsync(Ingredient entity)
+    private readonly CouchChefDbContext _context;
+
+    public IngredientService(CouchChefDbContext context)
     {
+        _context = context;
+    }
+    public Task<int> AddIngredientAsync(IngredientDTO ingredientDTO)
+    {
+        //
         throw new NotImplementedException();
     }
 
-    public Task DeleteAsync(Ingredient entity)
-    {
-        throw new NotImplementedException();
-    }
-
-    public Task DeleteByIdAsync(int id)
-    {
-        throw new NotImplementedException();
-    }
-
-    public Task<IEnumerable<Ingredient>> GetAllAsync()
-    {
-        throw new NotImplementedException();
-    }
-
-    public Task<Ingredient> GetByIdAsync(int id)
-    {
-        throw new NotImplementedException();
-    }
-
-    public Task UpdateAsync(Ingredient entity)
+    public Task<IngredientDTO> GetIngredientAsync(int id)
     {
         throw new NotImplementedException();
     }

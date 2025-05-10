@@ -1,0 +1,36 @@
+version: '3.4'
+
+services:
+  couchchefwebapipl:
+    image: ${DOCKER_REGISTRY-}couchchefwebapipl
+    build:
+      context: .
+      dockerfile: CouchChefWebApiPL/Dockerfile
+    depends_on:
+      - sqlserverService
+    networks:
+      - chefnet
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=https://+:443;http://+:80
+    ports:
+      - "80"
+      - "443"
+
+  sqlserverService:
+    image: mcr.microsoft.com/mssql/server:latest
+    hostname: sqlserverService
+    container_name: sqlserverService
+    environment:
+      ACCEPT_EULA: Y
+      SA_PASSWORD: BigPassw0rd1
+    volumes:
+      - ./data/mssql:/var/opt/mssql3
+    ports:
+      - 1433:1433
+    networks:
+      - chefnet
+
+networks:
+  chefnet:
+    driver: bridge

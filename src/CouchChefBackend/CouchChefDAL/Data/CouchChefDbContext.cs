@@ -36,8 +36,6 @@ public class CouchChefDbContext : DbContext
     {
         builder.Property(x => x.Name)
             .HasMaxLength(255);
-        builder.Property(x => x.Description)
-            .HasColumnType("text");
     }
 
     private void CategoryConfigure(EntityTypeBuilder<Category> builder)
@@ -54,8 +52,6 @@ public class CouchChefDbContext : DbContext
     {
         builder.Property(x => x.Name)
             .HasMaxLength(255);
-        builder.Property(x => x.Description)
-            .HasColumnType("text");
         builder.HasOne(ingredient => ingredient.Image)
             .WithOne(image => image.Ingredient)
             .HasForeignKey<Ingredient>(ingredient => ingredient.ImageId)
@@ -66,8 +62,6 @@ public class CouchChefDbContext : DbContext
     {
         builder.Property(x => x.Name)
             .HasMaxLength(255);
-        builder.Property(x => x.Directions)
-            .HasColumnType("text");
         builder.HasOne(recipe => recipe.Image)
             .WithOne(image => image.Recipe)
             .HasForeignKey<Recipe>(recipe => recipe.ImageId)
@@ -105,7 +99,5 @@ public class CouchChefDbContext : DbContext
             .HasDefaultValueSql("CAST(GETDATE() AS date)");
         builder.Property(x => x.ShortText)
             .HasMaxLength(255);
-        builder.Property(x => x.FullText)
-            .HasColumnType("text");
     }
 }
