@@ -1,0 +1,14 @@
+<div class="sidebar">
+    <h1>Couch Chef Admin</h1>
+    <hr />
+    <nav>
+        <ul>
+            <li *ngFor="let route of ROUTES;">
+                <a href="{{route.path}}">
+                    {{translate(route.title)}}
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <hr />
+</div>

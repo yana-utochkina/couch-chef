@@ -9,6 +9,20 @@ using Microsoft.Extensions.Options;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.Configure<CorsSettings>(builder.Configuration.GetSection(SettingStrings.Cors));
+
+var corsSettings = builder.Configuration.GetSection(SettingStrings.Cors).Get<CorsSettings>();
+
+builder.Services.AddCors(opt =>
+{
+    opt.AddPolicy(SettingStrings.CorsPolicy, policyBuilder =>
+    {
+        if (corsSettings is not null)
+            policyBuilder.AllowAnyHeader().AllowAnyMethod().WithOrigins(corsSettings.Origins);
+    });
+
+});
+
 // Add services to the container.
 builder.Services.AddControllers();
 
@@ -49,6 +63,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseCors(SettingStrings.CorsPolicy);
 
 app.UseHttpsRedirection();
 

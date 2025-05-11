@@ -1,0 +1,32 @@
+.sidebar {
+    padding: 10px 0;
+    text-align: center;
+    color: #F7F7F7 !important;
+
+    h1 {
+        font-family: "Ibarra Real Nova" !important;
+        font-style: italic;
+        font-weight: 500;
+        font-size: 32px;
+    }
+
+    hr {
+        border-top: 1px solid #f7f7f7 !important;
+        opacity: 1;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    li {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 24px;
+        font-weight: 300;
+
+        a {
+            color: #F7F7F7;
+            text-decoration: none;
+        }
+    }
+}

@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CouchChefWebApiPL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+711c7cd66bd79bd259a652789a8736a7e40ae970")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b246d37d1daa011e1cb7880f3d8faab64d0683ad")]
 [assembly: System.Reflection.AssemblyProductAttribute("CouchChefWebApiPL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CouchChefWebApiPL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
