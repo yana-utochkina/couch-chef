@@ -19,7 +19,8 @@ jobs:
         touch ~/.ssh/id_rsa
         echo "$SSH_KEY" | tr -d '\r' > ~/.ssh/id_rsa
         chmod 600 ~/.ssh/id_rsa
-    
+
+        ssh -o StrictHostKeyChecking=no "$HOST_IP"
         ssh -i ~/.ssh/id_rsa "${HOST_NAME}@${HOST_IP}"
         
       env:
