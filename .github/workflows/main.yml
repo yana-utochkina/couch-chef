@@ -17,7 +17,7 @@ jobs:
         echo "$SSH_KEY" | tr -d '\r' > ~/.ssh/id_rsa
         chmod 600 ~/.ssh/id_rsa
         echo "before connect"
-        ssh -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa "${HOST_NAME}@${HOST_IP}" << EOF
+        ssh -v -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o ConnectTimeout=10 -i ~/.ssh/id_rsa "${HOST_NAME}@${HOST_IP}" << EOF
         echo "hihihiha"
         EOF
       env:
