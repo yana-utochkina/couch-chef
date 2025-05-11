@@ -22,7 +22,8 @@ jobs:
 
         ssh -o StrictHostKeyChecking=no "$HOST_IP"
         ssh -i ~/.ssh/id_rsa "${HOST_NAME}@${HOST_IP}"
-        
+
+        EOF
       env:
         SSH_KEY: ${{ secrets.SSH_KEY }}
         HOST_IP: ${{ secrets.HOST_IP }}
