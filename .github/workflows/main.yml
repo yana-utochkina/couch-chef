@@ -8,10 +8,10 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    
     steps:
     - name: Test network connectivity
       run: |
+        echo $TEST_IP
         ping -c 4 "$HOST_IP"
 
     - name: Deploy to Ubuntu
@@ -28,3 +28,4 @@ jobs:
         SSH_KEY: ${{ secrets.SSH_KEY }}
         HOST_IP: ${{ secrets.HOST_IP }}
         HOST_NAME: ${{ secrets.HOST_NAME }}
+        TEST_IP: ${{ secrets.TEST_IP }}
