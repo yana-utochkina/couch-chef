@@ -11,7 +11,7 @@ jobs:
     steps:
     - name: Test network connectivity
       run: |
-        echo $TEST_IP
+        echo "$TEST_IP"
         ping -c 4 "$HOST_IP"
 
     - name: Deploy to Ubuntu
