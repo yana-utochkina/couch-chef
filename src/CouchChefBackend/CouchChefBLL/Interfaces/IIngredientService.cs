@@ -8,4 +8,5 @@ public interface IIngredientService
     Task<IngredientDTO> GetIngredientAsync(int id);
     Task<List<IngredientDTO>> GetAllAsync();
     Task DeleteIngredientAsync(int id);
+    Task UpdateIngredientAsync(int id, IngredientDTO ingredientDTO);
 }

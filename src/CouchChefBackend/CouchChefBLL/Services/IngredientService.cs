@@ -92,6 +92,12 @@ public class IngredientService : IIngredientService
         return ingredientDTO;
     }
 
+    public async Task UpdateIngredientAsync(int id, IngredientDTO ingredientDTO)
+    {
+        var ingredient = await GetIngredientByIdAsync(id);
+
+    }
+
     private float CountCalories(float protein, float carbs, float fat)
     {
         return protein * 4 + carbs * 4 + fat * 9;

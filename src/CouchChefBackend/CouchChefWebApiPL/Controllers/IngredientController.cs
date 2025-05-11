@@ -58,6 +58,21 @@ namespace CouchChefWebApiPL.Controllers
             }
         }
 
+        [HttpPut("{id}")]
+        public async Task<ActionResult<IngredientDTO>> UpdateIngredient(int id, [FromBody] IngredientDTO ingredientDTO)
+        {
+            try
+            {
+                await _ingredientService.UpdateIngredientAsync(id, ingredientDTO);
+                var ingredient = await _ingredientService.GetIngredientAsync(id);
+                return Ok(ingredient);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
         [HttpDelete("{id}")]
         public async Task<ActionResult> DeleteIngredient(int id)
         {
