@@ -9,6 +9,6 @@ public class Ingredient : BaseEntity
     public float Fat { get; set; }
     public float Carbs { get; set; }
 
-    public Image? Image { get; set; }
-    public List<RecipeIngredientDetail>? RecipeIngredientDetails { get; set; }
+    public virtual Image? Image { get; set; }
+    public virtual List<RecipeIngredientDetail>? RecipeIngredientDetails { get; set; }
 }

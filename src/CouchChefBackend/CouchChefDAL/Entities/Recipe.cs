@@ -10,8 +10,8 @@ public class Recipe : BaseEntity
     public required string Directions { get; set; }
     public int ImageId {  get; set; }
 
-    public required Cuisine Cuisine { get; set; }
-    public required Image Image { get; set; }
-    public required List<RecipeCategory> RecipeCategories { get; set; }
-    public required List<RecipeIngredientDetail> RecipeIngredientDetails { get; set; }
+    public required virtual Cuisine Cuisine { get; set; }
+    public required virtual Image Image { get; set; }
+    public required virtual List<RecipeCategory> RecipeCategories { get; set; }
+    public required virtual List<RecipeIngredientDetail> RecipeIngredientDetails { get; set; }
 }

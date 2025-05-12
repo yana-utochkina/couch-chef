@@ -46,6 +46,8 @@ public class IngredientService : IIngredientService
     {
         var ingredient = await GetIngredientByIdAsync(id);
         _context.Remove(ingredient);
+        if(ingredient.Image is not null)
+            _context.Remove(ingredient.Image);
         await _context.SaveChangesAsync();
     }
 
@@ -95,7 +97,25 @@ public class IngredientService : IIngredientService
     public async Task UpdateIngredientAsync(int id, IngredientDTO ingredientDTO)
     {
         var ingredient = await GetIngredientByIdAsync(id);
+        if (!ingredientDTO.IsValid())
+            throw new ArgumentException("Wrong ingredient nutrition facts");
 
+        ingredient.Name = ingredientDTO.Name;
+        ingredient.Description = ingredientDTO.Description;
+        ingredient.Fat = ingredientDTO.Fat;
+        ingredient.Protein = ingredientDTO.Protein;
+        ingredient.Carbs = ingredientDTO.Carbs;
+        ingredient.ImageId = ingredientDTO.ImageId;
+
+        if (ingredientDTO.ImageId is not null)
+        {
+            var image = await GetImageByIdAsync(ingredientDTO.ImageId ?? -1);
+            if (image is null)
+                throw new KeyNotFoundException("Image not found");
+        }
+
+        _context.Update(ingredient);
+        await _context.SaveChangesAsync();        
     }
 
     private float CountCalories(float protein, float carbs, float fat)

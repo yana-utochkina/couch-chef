@@ -37,6 +37,18 @@ public class ImageService : IImageService
         await _context.SaveChangesAsync();
     }
 
+    public async Task<List<ImageDTO>> GetAllAsync()
+    {
+        var images = await _context.Images.ToListAsync();
+        var imageDTOs = images.Select(x => new ImageDTO
+        {
+            Id = x.Id,
+            AlternativeText = x.AlternativeText,
+            Path = x.Path
+        }).ToList();
+        return imageDTOs;
+    }
+
     public async Task<ImageDTO> GetImageAsync(int id)
     {
         var image = await GetImageByIdAsync(id);

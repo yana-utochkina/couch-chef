@@ -7,6 +7,6 @@ public class RecipeIngredientDetail : BaseEntity
     public bool IsTagged { get; set; }
     public int WeightInGrams { get; set; }
 
-    public required Recipe Recipe { get; set; }
-    public required Ingredient Ingredient { get; set; }
+    public required virtual Recipe Recipe { get; set; }
+    public required virtual Ingredient Ingredient { get; set; }
 }

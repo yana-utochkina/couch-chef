@@ -14,6 +14,20 @@ namespace CouchChefWebApiPL.Controllers
             _imageService = imageService;
         }
 
+        [HttpGet]
+        public async Task<ActionResult<List<ImageDTO>>> GetAllImages()
+        {
+            try
+            {
+                var images = await _imageService.GetAllAsync();
+                return Ok(images);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
         [HttpGet("{id}")]
         public async Task<ActionResult<ImageDTO>> GetImage(int id)
         {

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CouchChefBLL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b246d37d1daa011e1cb7880f3d8faab64d0683ad")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7abf10487cd6609a40c3bf176975f51ea307fc17")]
 [assembly: System.Reflection.AssemblyProductAttribute("CouchChefBLL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CouchChefBLL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
