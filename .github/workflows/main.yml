@@ -11,7 +11,6 @@ jobs:
     steps:
     - name: Deploy to Ubuntu
       run: |
-        ping -c 4 "${HOST_IP}"
         mkdir -p ~/.ssh
         touch ~/.ssh/id_rsa
         echo "$SSH_KEY" | tr -d '\r' > ~/.ssh/id_rsa
