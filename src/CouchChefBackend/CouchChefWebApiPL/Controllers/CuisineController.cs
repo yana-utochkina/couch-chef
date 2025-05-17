@@ -2,96 +2,95 @@
 using CouchChefBLL.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CouchChefWebApiPL.Controllers
+namespace CouchChefWebApiPL.Controllers;
+
+[Route("api/cuisines")]
+[ApiController]
+public class CuisineController : ControllerBase
 {
-    [Route("api/cuisines")]
-    [ApiController]
-    public class CuisineController : ControllerBase
+    private readonly ICuisineService _cuisineService;
+
+    public CuisineController(ICuisineService cuisineService)
     {
-        private readonly ICuisineService _cuisineService;
+        _cuisineService = cuisineService;
+    }
 
-        public CuisineController(ICuisineService cuisineService)
+    [HttpGet]
+    public async Task<ActionResult<List<CuisineDTO>>> GetAllCuisines()
+    {
+        try
         {
-            _cuisineService = cuisineService;
+            var cuisines = await _cuisineService.GelAllCuisinesAsync();
+            return Ok(cuisines);
         }
-
-        [HttpGet]
-        public async Task<ActionResult<List<CuisineDTO>>> GetAllCuisines()
+        catch (Exception ex)
         {
-            try
-            {
-                var cuisines = await _cuisineService.GelAllCuisinesAsync();
-                return Ok(cuisines);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
+            return BadRequest(ex.Message);
         }
+    }
 
-        [HttpGet("{id}")]
-        public async Task<ActionResult<CuisineDTO>> GetCuisine(int id)
+    [HttpGet("{id}")]
+    public async Task<ActionResult<CuisineDTO>> GetCuisine(int id)
+    {
+        try
         {
-            try
+            var cuisine = await _cuisineService.GetCuisineAsync(id);
+            var cuisineDTO = new CuisineDTO
             {
-                var cuisine = await _cuisineService.GetCuisineAsync(id);
-                var cuisineDTO = new CuisineDTO
-                {
-                    Id = cuisine.Id,
-                    Name = cuisine.Name,
-                    Description = cuisine.Description
-                };
-                return Ok(cuisineDTO);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
+                Id = cuisine.Id,
+                Name = cuisine.Name,
+                Description = cuisine.Description
+            };
+            return Ok(cuisineDTO);
         }
-
-
-        [HttpPost]
-        public async Task<ActionResult<CuisineDTO>> CreateCuisine([FromBody] CuisineDTO cuisineDTO)
+        catch (Exception ex)
         {
-            try
-            {
-                var id = await _cuisineService.AddCuisineAsync(cuisineDTO);
-                cuisineDTO = await _cuisineService.GetCuisineAsync(id);
-                return Ok(cuisineDTO);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
+            return BadRequest(ex.Message);
         }
+    }
 
-        [HttpPut("{id}")]
-        public async Task<ActionResult<CuisineDTO>> UpdateCuisine(int id, [FromBody] CuisineDTO cuisineDTO)
+
+    [HttpPost]
+    public async Task<ActionResult<CuisineDTO>> CreateCuisine([FromBody] CuisineDTO cuisineDTO)
+    {
+        try
         {
-            try
-            {
-                await _cuisineService.UpdateCuisineAsync(id, cuisineDTO);
-                cuisineDTO = await _cuisineService.GetCuisineAsync(id);
-                return Ok(cuisineDTO);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
+            var id = await _cuisineService.AddCuisineAsync(cuisineDTO);
+            cuisineDTO = await _cuisineService.GetCuisineAsync(id);
+            return Ok(cuisineDTO);
         }
-
-        [HttpDelete("{id}")]
-        public async Task<ActionResult> DeleteCuisine(int id)
+        catch (Exception ex)
         {
-            try
-            {
-                await _cuisineService.DeleteCuisineByIdAsync(id);
-                return Ok();
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
+            return BadRequest(ex.Message);
+        }
+    }
+
+    [HttpPut("{id}")]
+    public async Task<ActionResult<CuisineDTO>> UpdateCuisine(int id, [FromBody] CuisineDTO cuisineDTO)
+    {
+        try
+        {
+            await _cuisineService.UpdateCuisineAsync(id, cuisineDTO);
+            cuisineDTO = await _cuisineService.GetCuisineAsync(id);
+            return Ok(cuisineDTO);
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(ex.Message);
+        }
+    }
+
+    [HttpDelete("{id}")]
+    public async Task<ActionResult> DeleteCuisine(int id)
+    {
+        try
+        {
+            await _cuisineService.DeleteCuisineByIdAsync(id);
+            return Ok();
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(ex.Message);
         }
     }
 }

@@ -2,89 +2,88 @@
 using CouchChefBLL.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CouchChefWebApiPL.Controllers
+namespace CouchChefWebApiPL.Controllers;
+
+[Route("api/ingredients")]
+[ApiController]
+public class IngredientController : ControllerBase
 {
-    [Route("api/ingredients")]
-    [ApiController]
-    public class IngredientController : ControllerBase
+    private readonly IIngredientService _ingredientService;
+
+    public IngredientController(IIngredientService ingredientService)
     {
-        private readonly IIngredientService _ingredientService;
+        _ingredientService = ingredientService;
+    }
 
-        public IngredientController(IIngredientService ingredientService)
+    [HttpGet]
+    public async Task<ActionResult<List<IngredientDTO>>> GetAllIngredients()
+    {
+        try
         {
-            _ingredientService = ingredientService;
+            var ingredients = await _ingredientService.GetAllAsync();
+            return ingredients;
         }
-
-        [HttpGet]
-        public async Task<ActionResult<List<IngredientDTO>>> GetAllIngredients()
+        catch (Exception ex)
         {
-            try
-            {
-                var ingredients = await _ingredientService.GetAllAsync();
-                return ingredients;
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
+            return BadRequest(ex.Message);
         }
+    }
 
-        [HttpGet("{id}")]
-        public async Task<ActionResult<IngredientDTO>> GetIngredient(int id)
+    [HttpGet("{id}")]
+    public async Task<ActionResult<IngredientDTO>> GetIngredient(int id)
+    {
+        try
         {
-            try
-            {
-                var ingredient = await _ingredientService.GetIngredientAsync(id);
-                return ingredient;
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
+            var ingredient = await _ingredientService.GetIngredientAsync(id);
+            return ingredient;
         }
-
-        [HttpPost]
-        public async Task<ActionResult<IngredientDTO>> CreateIngredient([FromBody] IngredientDTO ingredientDTO)
+        catch (Exception ex)
         {
-            try
-            {
-                int id = await _ingredientService.AddIngredientAsync(ingredientDTO);
-                ingredientDTO = await _ingredientService.GetIngredientAsync(id);
-                return Ok(ingredientDTO);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
+            return BadRequest(ex.Message);
         }
+    }
 
-        [HttpPut("{id}")]
-        public async Task<ActionResult<IngredientDTO>> UpdateIngredient(int id, [FromBody] IngredientDTO ingredientDTO)
+    [HttpPost]
+    public async Task<ActionResult<IngredientDTO>> CreateIngredient([FromBody] IngredientDTO ingredientDTO)
+    {
+        try
         {
-            try
-            {
-                await _ingredientService.UpdateIngredientAsync(id, ingredientDTO);
-                var ingredient = await _ingredientService.GetIngredientAsync(id);
-                return Ok(ingredient);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
+            int id = await _ingredientService.AddIngredientAsync(ingredientDTO);
+            ingredientDTO = await _ingredientService.GetIngredientAsync(id);
+            return Ok(ingredientDTO);
         }
-
-        [HttpDelete("{id}")]
-        public async Task<ActionResult> DeleteIngredient(int id)
+        catch (Exception ex)
         {
-            try
-            {
-                await _ingredientService.DeleteIngredientAsync(id);
-                return Ok();
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
+            return BadRequest(ex.Message);
+        }
+    }
+
+    [HttpPut("{id}")]
+    public async Task<ActionResult<IngredientDTO>> UpdateIngredient(int id, [FromBody] IngredientDTO ingredientDTO)
+    {
+        try
+        {
+            await _ingredientService.UpdateIngredientAsync(id, ingredientDTO);
+            var ingredient = await _ingredientService.GetIngredientAsync(id);
+            return Ok(ingredient);
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(ex.Message);
+        }
+    }
+
+    [HttpDelete("{id}")]
+    public async Task<ActionResult> DeleteIngredient(int id)
+    {
+        try
+        {
+            await _ingredientService.DeleteIngredientAsync(id);
+            return Ok();
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(ex.Message);
         }
     }
 }

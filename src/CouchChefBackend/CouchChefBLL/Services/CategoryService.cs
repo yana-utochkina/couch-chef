@@ -28,7 +28,7 @@ public class CategoryService : ICategoryService
 
     public async Task DeleteCategoryAsync(int id)
     {
-        var category = await GetCategoryAsync(id);
+        var category = await GetCategoryByIdAsync(id);
         _context.Categories.Remove(category);
         await _context.SaveChangesAsync();
     }
@@ -44,20 +44,20 @@ public class CategoryService : ICategoryService
         return categoriesDTOs;
     }
 
-    public async Task<CategoryDTO> GetCategoryByIdAsync(int id)
+    public async Task<CategoryDTO> GetCategoryAsync(int id)
     {
-        var category = await GetCategoryAsync(id);
+        var category = await GetCategoryByIdAsync(id);
         return new CategoryDTO { Id = category.Id, Name = category.Name };
     }
 
     public async Task UpdateCategoryAsync(int id, string Name)
     {
-        var category = await GetCategoryAsync(id);
+        var category = await GetCategoryByIdAsync(id);
         category.Name = Name;
         await _context.SaveChangesAsync();
     }
 
-    private async Task<Category> GetCategoryAsync(int id)
+    private async Task<Category> GetCategoryByIdAsync(int id)
     {
         var category = await _context.Categories.FirstOrDefaultAsync(x => x.Id == id);
         if (category is null)
