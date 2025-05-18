@@ -1,4 +1,5 @@
 ﻿using CouchChefBLL.DTOs;
+using CouchChefBLL.DTOs.Post;
 using CouchChefBLL.Interfaces;
 using CouchChefDAL.Data;
 using CouchChefDAL.Entities;
@@ -9,37 +10,41 @@ namespace CouchChefBLL.Services;
 public class IngredientService : IIngredientService
 {
     private readonly CouchChefDbContext _context;
+    private readonly IStaticFileService _staticFileService;
 
-    public IngredientService(CouchChefDbContext context)
+    public IngredientService(CouchChefDbContext context, IStaticFileService staticFileService)
     {
         _context = context;
+        _staticFileService = staticFileService;
     }
-    public async Task<int> AddIngredientAsync(IngredientDTO ingredientDTO)
+
+    public async Task<PostIngredientDTO> CreateIngredientAsync(PostIngredientDTO postIngredientDTO)
     {
-        if (!ingredientDTO.IsValid())
-            throw new ArgumentException("Wrong ingredient nutrition facts");
-
-        var ingredient = new Ingredient
+        if (postIngredientDTO.IsImageNotNull())
         {
-            Id = ingredientDTO.Id,
-            Name = ingredientDTO.Name,
-            ImageId = ingredientDTO.ImageId,
-            Description = ingredientDTO.Description,
-            Protein = ingredientDTO.Protein,
-            Carbs = ingredientDTO.Carbs,
-            Fat = ingredientDTO.Fat,
-        };
+            string imagePath = "";
+            await using var transaction = await _context.Database.BeginTransactionAsync();
+            try
+            {
+                var image = await AddImageAsync(postIngredientDTO.PostImageDTO);
+                postIngredientDTO.PostImageDTO.Id = image.Id;
+                imagePath = image.Path;
 
-        if (ingredientDTO.ImageId is not null)
-        {
-            var image = await GetImageByIdAsync(ingredientDTO.ImageId ?? -1);
-            if (image is null)
-                throw new KeyNotFoundException("Image not found");
+                postIngredientDTO.Id = await AddIngredientAsync(postIngredientDTO);
+
+                transaction.Commit();
+            }
+            catch
+            {
+                _staticFileService.Remove(imagePath);
+                throw;
+            }
         }
-
-        await _context.AddAsync(ingredient);
-        await _context.SaveChangesAsync();
-        return ingredient.Id;
+        else
+        {
+            postIngredientDTO.Id =  await AddIngredientAsync(postIngredientDTO);
+        }
+        return postIngredientDTO;
     }
 
     public async Task DeleteIngredientAsync(int id)
@@ -94,28 +99,30 @@ public class IngredientService : IIngredientService
         return ingredientDTO;
     }
 
-    public async Task UpdateIngredientAsync(int id, IngredientDTO ingredientDTO)
+    public async Task<PostIngredientDTO> UpdateIngredientAsync(int id, PostIngredientDTO postIngredientDTO)
     {
         var ingredient = await GetIngredientByIdAsync(id);
-        if (!ingredientDTO.IsValid())
+        if (!postIngredientDTO.IsValid())
             throw new ArgumentException("Wrong ingredient nutrition facts");
 
-        ingredient.Name = ingredientDTO.Name;
-        ingredient.Description = ingredientDTO.Description;
-        ingredient.Fat = ingredientDTO.Fat;
-        ingredient.Protein = ingredientDTO.Protein;
-        ingredient.Carbs = ingredientDTO.Carbs;
-        ingredient.ImageId = ingredientDTO.ImageId;
-
-        if (ingredientDTO.ImageId is not null)
+        ingredient.Name = postIngredientDTO.Name;
+        ingredient.Description = postIngredientDTO.Description;
+        ingredient.Fat = postIngredientDTO.Fat;
+        ingredient.Protein = postIngredientDTO.Protein;
+        ingredient.Carbs = postIngredientDTO.Carbs;
+        
+        if (postIngredientDTO.IsImageNotNull())
         {
-            var image = await GetImageByIdAsync(ingredientDTO.ImageId ?? -1);
-            if (image is null)
-                throw new KeyNotFoundException("Image not found");
+            await _staticFileService.UploadAsync(postIngredientDTO.PostImageDTO.Image, false);
+            var image =   await AddImageAsync(postIngredientDTO.PostImageDTO);
+            postIngredientDTO.PostImageDTO.Id = image.Id;
+
+            postIngredientDTO.Id = await AddIngredientAsync(postIngredientDTO);
         }
 
         _context.Update(ingredient);
-        await _context.SaveChangesAsync();        
+        await _context.SaveChangesAsync();
+        return postIngredientDTO;
     }
 
     private float CountCalories(float protein, float carbs, float fat)
@@ -138,5 +145,39 @@ public class IngredientService : IIngredientService
         if (ingredient is null)
             throw new KeyNotFoundException($"Ingredient with id {id} not found.");
         return ingredient;
+    }
+
+    private async Task<Image> AddImageAsync(PostImageDTO postImageDTO)
+    {
+        var path = await _staticFileService.UploadAsync(postImageDTO.Image, false);
+        var image = new Image
+        {
+            Path = path,
+            AlternativeText = postImageDTO.AlternativeText
+        };
+        await _context.AddAsync(image);
+        await _context.SaveChangesAsync();
+        return image;
+    }
+
+    private async Task<int> AddIngredientAsync(PostIngredientDTO postIngredientDTO)
+    {
+        if (!postIngredientDTO.IsValid())
+            throw new ArgumentException("Wrong ingredient nutrition facts");
+
+        var ingredient = new Ingredient
+        {
+            Id = postIngredientDTO.Id,
+            Name = postIngredientDTO.Name,
+            ImageId = postIngredientDTO.PostImageDTO?.Id,
+            Description = postIngredientDTO.Description,
+            Protein = postIngredientDTO.Protein,
+            Carbs = postIngredientDTO.Carbs,
+            Fat = postIngredientDTO.Fat,
+        };
+
+        await _context.AddAsync(ingredient);
+        await _context.SaveChangesAsync();
+        return ingredient.Id;
     }
 }

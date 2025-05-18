@@ -1,4 +1,5 @@
 ﻿using CouchChefBLL.DTOs;
+using CouchChefBLL.DTOs.Post;
 using CouchChefBLL.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
@@ -35,7 +36,7 @@ public class IngredientController : ControllerBase
         try
         {
             var ingredient = await _ingredientService.GetIngredientAsync(id);
-            return ingredient;
+            return Ok(ingredient);
         }
         catch (Exception ex)
         {
@@ -44,13 +45,12 @@ public class IngredientController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<ActionResult<IngredientDTO>> CreateIngredient([FromBody] IngredientDTO ingredientDTO)
+    public async Task<ActionResult<PostIngredientDTO>> AddIngredient([FromForm] PostIngredientDTO postIngredientDTO)
     {
         try
         {
-            int id = await _ingredientService.AddIngredientAsync(ingredientDTO);
-            ingredientDTO = await _ingredientService.GetIngredientAsync(id);
-            return Ok(ingredientDTO);
+            postIngredientDTO = await _ingredientService.CreateIngredientAsync(postIngredientDTO);
+            return Ok(postIngredientDTO);
         }
         catch (Exception ex)
         {
@@ -59,12 +59,11 @@ public class IngredientController : ControllerBase
     }
 
     [HttpPut("{id}")]
-    public async Task<ActionResult<IngredientDTO>> UpdateIngredient(int id, [FromBody] IngredientDTO ingredientDTO)
+    public async Task<ActionResult<PostIngredientDTO>> UpdateIngredient(int id, [FromForm] PostIngredientDTO postIngredientDTO)
     {
         try
         {
-            await _ingredientService.UpdateIngredientAsync(id, ingredientDTO);
-            var ingredient = await _ingredientService.GetIngredientAsync(id);
+            var ingredient = await _ingredientService.UpdateIngredientAsync(id, postIngredientDTO);
             return Ok(ingredient);
         }
         catch (Exception ex)

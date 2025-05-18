@@ -10,6 +10,7 @@ public class PostRecipeDTO
     public int Servings { get; set; }
     public required string Directions { get; set; }
     public int ImageId { get; set; }
+    public required PostImageDTO PostImageDTO { get; set; }
     public required List<int> IngredientIds { get; set; }
     public required List<int> CategoryIds { get; set; }
 

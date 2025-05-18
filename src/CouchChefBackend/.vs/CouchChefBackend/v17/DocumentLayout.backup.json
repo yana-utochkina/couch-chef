@@ -3,6 +3,50 @@
   "WorkspaceRootPath": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{03AA0AF8-9CD4-48E9-A65F-EA975B94A04E}|CouchChefBLL\\CouchChefBLL.csproj|d:\\learning\\university2\\isandtp\\couchchef\\src\\couchchefbackend\\couchchefbll\\services\\ingredientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03AA0AF8-9CD4-48E9-A65F-EA975B94A04E}|CouchChefBLL\\CouchChefBLL.csproj|solutionrelative:couchchefbll\\services\\ingredientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03AA0AF8-9CD4-48E9-A65F-EA975B94A04E}|CouchChefBLL\\CouchChefBLL.csproj|d:\\learning\\university2\\isandtp\\couchchef\\src\\couchchefbackend\\couchchefbll\\dtos\\ingredientdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03AA0AF8-9CD4-48E9-A65F-EA975B94A04E}|CouchChefBLL\\CouchChefBLL.csproj|solutionrelative:couchchefbll\\dtos\\ingredientdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03AA0AF8-9CD4-48E9-A65F-EA975B94A04E}|CouchChefBLL\\CouchChefBLL.csproj|d:\\learning\\university2\\isandtp\\couchchef\\src\\couchchefbackend\\couchchefbll\\interfaces\\iingredientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03AA0AF8-9CD4-48E9-A65F-EA975B94A04E}|CouchChefBLL\\CouchChefBLL.csproj|solutionrelative:couchchefbll\\interfaces\\iingredientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{872CF96F-F4E9-4E6F-9567-164910C795CB}|CouchChefWebApiPL\\CouchChefWebApiPL.csproj|d:\\learning\\university2\\isandtp\\couchchef\\src\\couchchefbackend\\couchchefwebapipl\\controllers\\ingredientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{872CF96F-F4E9-4E6F-9567-164910C795CB}|CouchChefWebApiPL\\CouchChefWebApiPL.csproj|solutionrelative:couchchefwebapipl\\controllers\\ingredientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03AA0AF8-9CD4-48E9-A65F-EA975B94A04E}|CouchChefBLL\\CouchChefBLL.csproj|d:\\learning\\university2\\isandtp\\couchchef\\src\\couchchefbackend\\couchchefbll\\dtos\\post\\postimagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03AA0AF8-9CD4-48E9-A65F-EA975B94A04E}|CouchChefBLL\\CouchChefBLL.csproj|solutionrelative:couchchefbll\\dtos\\post\\postimagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03AA0AF8-9CD4-48E9-A65F-EA975B94A04E}|CouchChefBLL\\CouchChefBLL.csproj|d:\\learning\\university2\\isandtp\\couchchef\\src\\couchchefbackend\\couchchefbll\\interfaces\\istaticfileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03AA0AF8-9CD4-48E9-A65F-EA975B94A04E}|CouchChefBLL\\CouchChefBLL.csproj|solutionrelative:couchchefbll\\interfaces\\istaticfileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03AA0AF8-9CD4-48E9-A65F-EA975B94A04E}|CouchChefBLL\\CouchChefBLL.csproj|d:\\learning\\university2\\isandtp\\couchchef\\src\\couchchefbackend\\couchchefbll\\services\\staticfileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03AA0AF8-9CD4-48E9-A65F-EA975B94A04E}|CouchChefBLL\\CouchChefBLL.csproj|solutionrelative:couchchefbll\\services\\staticfileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{872CF96F-F4E9-4E6F-9567-164910C795CB}|CouchChefWebApiPL\\CouchChefWebApiPL.csproj|d:\\learning\\university2\\isandtp\\couchchef\\src\\couchchefbackend\\couchchefwebapipl\\controllers\\imagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{872CF96F-F4E9-4E6F-9567-164910C795CB}|CouchChefWebApiPL\\CouchChefWebApiPL.csproj|solutionrelative:couchchefwebapipl\\controllers\\imagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{872CF96F-F4E9-4E6F-9567-164910C795CB}|CouchChefWebApiPL\\CouchChefWebApiPL.csproj|d:\\learning\\university2\\isandtp\\couchchef\\src\\couchchefbackend\\couchchefwebapipl\\configurations\\migrationmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{872CF96F-F4E9-4E6F-9567-164910C795CB}|CouchChefWebApiPL\\CouchChefWebApiPL.csproj|solutionrelative:couchchefwebapipl\\configurations\\migrationmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{872CF96F-F4E9-4E6F-9567-164910C795CB}|CouchChefWebApiPL\\CouchChefWebApiPL.csproj|d:\\learning\\university2\\isandtp\\couchchef\\src\\couchchefbackend\\couchchefwebapipl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{872CF96F-F4E9-4E6F-9567-164910C795CB}|CouchChefWebApiPL\\CouchChefWebApiPL.csproj|solutionrelative:couchchefwebapipl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03AA0AF8-9CD4-48E9-A65F-EA975B94A04E}|CouchChefBLL\\CouchChefBLL.csproj|d:\\learning\\university2\\isandtp\\couchchef\\src\\couchchefbackend\\couchchefbll\\dtos\\imagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03AA0AF8-9CD4-48E9-A65F-EA975B94A04E}|CouchChefBLL\\CouchChefBLL.csproj|solutionrelative:couchchefbll\\dtos\\imagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{01987690-0D0F-4034-9F21-CF2349A55D35}|docker-compose.dcproj|d:\\learning\\university2\\isandtp\\couchchef\\src\\couchchefbackend\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{01987690-0D0F-4034-9F21-CF2349A55D35}|docker-compose.dcproj|solutionrelative:docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
@@ -19,16 +63,8 @@
       "RelativeMoniker": "D:0:0:{872CF96F-F4E9-4E6F-9567-164910C795CB}|CouchChefWebApiPL\\CouchChefWebApiPL.csproj|solutionrelative:couchchefwebapipl\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{872CF96F-F4E9-4E6F-9567-164910C795CB}|CouchChefWebApiPL\\CouchChefWebApiPL.csproj|d:\\learning\\university2\\isandtp\\couchchef\\src\\couchchefbackend\\couchchefwebapipl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{872CF96F-F4E9-4E6F-9567-164910C795CB}|CouchChefWebApiPL\\CouchChefWebApiPL.csproj|solutionrelative:couchchefwebapipl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{872CF96F-F4E9-4E6F-9567-164910C795CB}|CouchChefWebApiPL\\CouchChefWebApiPL.csproj|d:\\learning\\university2\\isandtp\\couchchef\\src\\couchchefbackend\\couchchefwebapipl\\controllers\\filecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{872CF96F-F4E9-4E6F-9567-164910C795CB}|CouchChefWebApiPL\\CouchChefWebApiPL.csproj|solutionrelative:couchchefwebapipl\\controllers\\filecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{872CF96F-F4E9-4E6F-9567-164910C795CB}|CouchChefWebApiPL\\CouchChefWebApiPL.csproj|d:\\learning\\university2\\isandtp\\couchchef\\src\\couchchefbackend\\couchchefwebapipl\\controllers\\imagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{872CF96F-F4E9-4E6F-9567-164910C795CB}|CouchChefWebApiPL\\CouchChefWebApiPL.csproj|solutionrelative:couchchefwebapipl\\controllers\\imagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{872CF96F-F4E9-4E6F-9567-164910C795CB}|CouchChefWebApiPL\\CouchChefWebApiPL.csproj|d:\\learning\\university2\\isandtp\\couchchef\\src\\couchchefbackend\\couchchefwebapipl\\controllers\\advisecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -71,10 +107,6 @@
       "RelativeMoniker": "D:0:0:{872CF96F-F4E9-4E6F-9567-164910C795CB}|CouchChefWebApiPL\\CouchChefWebApiPL.csproj|solutionrelative:couchchefwebapipl\\controllers\\cuisinecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{872CF96F-F4E9-4E6F-9567-164910C795CB}|CouchChefWebApiPL\\CouchChefWebApiPL.csproj|d:\\learning\\university2\\isandtp\\couchchef\\src\\couchchefbackend\\couchchefwebapipl\\controllers\\ingredientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{872CF96F-F4E9-4E6F-9567-164910C795CB}|CouchChefWebApiPL\\CouchChefWebApiPL.csproj|solutionrelative:couchchefwebapipl\\controllers\\ingredientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{872CF96F-F4E9-4E6F-9567-164910C795CB}|CouchChefWebApiPL\\CouchChefWebApiPL.csproj|d:\\learning\\university2\\isandtp\\couchchef\\src\\couchchefbackend\\couchchefwebapipl\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{872CF96F-F4E9-4E6F-9567-164910C795CB}|CouchChefWebApiPL\\CouchChefWebApiPL.csproj|solutionrelative:couchchefwebapipl\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -85,10 +117,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D95CD2F4-D69F-4C8E-A261-700F7C2E59FD}|CouchChefDAL\\CouchChefDAL.csproj|d:\\learning\\university2\\isandtp\\couchchef\\src\\couchchefbackend\\couchchefdal\\entities\\recipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D95CD2F4-D69F-4C8E-A261-700F7C2E59FD}|CouchChefDAL\\CouchChefDAL.csproj|solutionrelative:couchchefdal\\entities\\recipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{03AA0AF8-9CD4-48E9-A65F-EA975B94A04E}|CouchChefBLL\\CouchChefBLL.csproj|d:\\learning\\university2\\isandtp\\couchchef\\src\\couchchefbackend\\couchchefbll\\services\\ingredientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{03AA0AF8-9CD4-48E9-A65F-EA975B94A04E}|CouchChefBLL\\CouchChefBLL.csproj|solutionrelative:couchchefbll\\services\\ingredientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D95CD2F4-D69F-4C8E-A261-700F7C2E59FD}|CouchChefDAL\\CouchChefDAL.csproj|d:\\learning\\university2\\isandtp\\couchchef\\src\\couchchefbackend\\couchchefdal\\entities\\ingredient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -119,10 +147,6 @@
       "RelativeMoniker": "D:0:0:{D95CD2F4-D69F-4C8E-A261-700F7C2E59FD}|CouchChefDAL\\CouchChefDAL.csproj|solutionrelative:couchchefdal\\entities\\advise.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{03AA0AF8-9CD4-48E9-A65F-EA975B94A04E}|CouchChefBLL\\CouchChefBLL.csproj|d:\\learning\\university2\\isandtp\\couchchef\\src\\couchchefbackend\\couchchefbll\\interfaces\\iingredientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{03AA0AF8-9CD4-48E9-A65F-EA975B94A04E}|CouchChefBLL\\CouchChefBLL.csproj|solutionrelative:couchchefbll\\interfaces\\iingredientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{03AA0AF8-9CD4-48E9-A65F-EA975B94A04E}|CouchChefBLL\\CouchChefBLL.csproj|d:\\learning\\university2\\isandtp\\couchchef\\src\\couchchefbackend\\couchchefbll\\interfaces\\iimageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{03AA0AF8-9CD4-48E9-A65F-EA975B94A04E}|CouchChefBLL\\CouchChefBLL.csproj|solutionrelative:couchchefbll\\interfaces\\iimageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -139,20 +163,8 @@
       "RelativeMoniker": "D:0:0:{03AA0AF8-9CD4-48E9-A65F-EA975B94A04E}|CouchChefBLL\\CouchChefBLL.csproj|solutionrelative:couchchefbll\\configurations\\staticfilesettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{03AA0AF8-9CD4-48E9-A65F-EA975B94A04E}|CouchChefBLL\\CouchChefBLL.csproj|d:\\learning\\university2\\isandtp\\couchchef\\src\\couchchefbackend\\couchchefbll\\services\\staticfileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{03AA0AF8-9CD4-48E9-A65F-EA975B94A04E}|CouchChefBLL\\CouchChefBLL.csproj|solutionrelative:couchchefbll\\services\\staticfileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{872CF96F-F4E9-4E6F-9567-164910C795CB}|CouchChefWebApiPL\\CouchChefWebApiPL.csproj|d:\\learning\\university2\\isandtp\\couchchef\\src\\couchchefbackend\\couchchefwebapipl\\configurations\\migrationmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{872CF96F-F4E9-4E6F-9567-164910C795CB}|CouchChefWebApiPL\\CouchChefWebApiPL.csproj|solutionrelative:couchchefwebapipl\\configurations\\migrationmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D95CD2F4-D69F-4C8E-A261-700F7C2E59FD}|CouchChefDAL\\CouchChefDAL.csproj|d:\\learning\\university2\\isandtp\\couchchef\\src\\couchchefbackend\\couchchefdal\\migrations\\20250510080746_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D95CD2F4-D69F-4C8E-A261-700F7C2E59FD}|CouchChefDAL\\CouchChefDAL.csproj|solutionrelative:couchchefdal\\migrations\\20250510080746_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{03AA0AF8-9CD4-48E9-A65F-EA975B94A04E}|CouchChefBLL\\CouchChefBLL.csproj|d:\\learning\\university2\\isandtp\\couchchef\\src\\couchchefbackend\\couchchefbll\\dtos\\imagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{03AA0AF8-9CD4-48E9-A65F-EA975B94A04E}|CouchChefBLL\\CouchChefBLL.csproj|solutionrelative:couchchefbll\\dtos\\imagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\MSBuild\\Sdks\\Microsoft.Docker.Sdk\\build\\Microsoft.VisualStudio.Docker.Compose.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
@@ -160,10 +172,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{872CF96F-F4E9-4E6F-9567-164910C795CB}|CouchChefWebApiPL\\CouchChefWebApiPL.csproj|d:\\learning\\university2\\isandtp\\couchchef\\src\\couchchefbackend\\couchchefwebapipl\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{872CF96F-F4E9-4E6F-9567-164910C795CB}|CouchChefWebApiPL\\CouchChefWebApiPL.csproj|solutionrelative:couchchefwebapipl\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{03AA0AF8-9CD4-48E9-A65F-EA975B94A04E}|CouchChefBLL\\CouchChefBLL.csproj|d:\\learning\\university2\\isandtp\\couchchef\\src\\couchchefbackend\\couchchefbll\\interfaces\\istaticfileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{03AA0AF8-9CD4-48E9-A65F-EA975B94A04E}|CouchChefBLL\\CouchChefBLL.csproj|solutionrelative:couchchefbll\\interfaces\\istaticfileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{872CF96F-F4E9-4E6F-9567-164910C795CB}|CouchChefWebApiPL\\CouchChefWebApiPL.csproj|d:\\learning\\university2\\isandtp\\couchchef\\src\\couchchefbackend\\couchchefwebapipl\\couchchefwebapipl.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -204,8 +212,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 162,
-          "SelectedChildIndex": 9,
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -221,43 +229,98 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CouchChefWebApiPL.http",
-              "DocumentMoniker": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefWebApiPL\\CouchChefWebApiPL.http",
-              "RelativeDocumentMoniker": "CouchChefWebApiPL\\CouchChefWebApiPL.http",
-              "ToolTip": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefWebApiPL\\CouchChefWebApiPL.http",
-              "RelativeToolTip": "CouchChefWebApiPL\\CouchChefWebApiPL.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-05-13T06:36:45.986Z"
+              "DocumentIndex": 3,
+              "Title": "IngredientController.cs",
+              "DocumentMoniker": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefWebApiPL\\Controllers\\IngredientController.cs",
+              "RelativeDocumentMoniker": "CouchChefWebApiPL\\Controllers\\IngredientController.cs",
+              "ToolTip": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefWebApiPL\\Controllers\\IngredientController.cs",
+              "RelativeToolTip": "CouchChefWebApiPL\\Controllers\\IngredientController.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAUwC4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T09:28:38.864Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PostImageDTO.cs",
+              "DocumentMoniker": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefBLL\\DTOs\\Post\\PostImageDTO.cs",
+              "RelativeDocumentMoniker": "CouchChefBLL\\DTOs\\Post\\PostImageDTO.cs",
+              "ToolTip": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefBLL\\DTOs\\Post\\PostImageDTO.cs",
+              "RelativeToolTip": "CouchChefBLL\\DTOs\\Post\\PostImageDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T16:23:44.575Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IngredientService.cs",
+              "DocumentMoniker": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefBLL\\Services\\IngredientService.cs",
+              "RelativeDocumentMoniker": "CouchChefBLL\\Services\\IngredientService.cs",
+              "ToolTip": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefBLL\\Services\\IngredientService.cs*",
+              "RelativeToolTip": "CouchChefBLL\\Services\\IngredientService.cs*",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAuwFwAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T11:11:56.914Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefWebApiPL\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "CouchChefWebApiPL\\appsettings.Development.json",
-              "ToolTip": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefWebApiPL\\appsettings.Development.json",
-              "RelativeToolTip": "CouchChefWebApiPL\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-13T06:36:39.696Z"
+              "Title": "IIngredientService.cs",
+              "DocumentMoniker": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefBLL\\Interfaces\\IIngredientService.cs",
+              "RelativeDocumentMoniker": "CouchChefBLL\\Interfaces\\IIngredientService.cs",
+              "ToolTip": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefBLL\\Interfaces\\IIngredientService.cs",
+              "RelativeToolTip": "CouchChefBLL\\Interfaces\\IIngredientService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T11:07:08.728Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "CouchChefDbContext.cs",
-              "DocumentMoniker": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefDAL\\Data\\CouchChefDbContext.cs",
-              "RelativeDocumentMoniker": "CouchChefDAL\\Data\\CouchChefDbContext.cs",
-              "ToolTip": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefDAL\\Data\\CouchChefDbContext.cs",
-              "RelativeToolTip": "CouchChefDAL\\Data\\CouchChefDbContext.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAkwE4AAAAgAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "IStaticFileService.cs",
+              "DocumentMoniker": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefBLL\\Interfaces\\IStaticFileService.cs",
+              "RelativeDocumentMoniker": "CouchChefBLL\\Interfaces\\IStaticFileService.cs",
+              "ToolTip": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefBLL\\Interfaces\\IStaticFileService.cs",
+              "RelativeToolTip": "CouchChefBLL\\Interfaces\\IStaticFileService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T10:41:02.836Z"
+              "WhenOpened": "2025-05-10T10:01:24.302Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "StaticFileService.cs",
+              "DocumentMoniker": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefBLL\\Services\\StaticFileService.cs",
+              "RelativeDocumentMoniker": "CouchChefBLL\\Services\\StaticFileService.cs",
+              "ToolTip": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefBLL\\Services\\StaticFileService.cs",
+              "RelativeToolTip": "CouchChefBLL\\Services\\StaticFileService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAswAcAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T10:02:06.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IngredientDTO.cs",
+              "DocumentMoniker": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefBLL\\DTOs\\IngredientDTO.cs",
+              "RelativeDocumentMoniker": "CouchChefBLL\\DTOs\\IngredientDTO.cs",
+              "ToolTip": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefBLL\\DTOs\\IngredientDTO.cs",
+              "RelativeToolTip": "CouchChefBLL\\DTOs\\IngredientDTO.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwA4AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T16:18:22.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "ImageController.cs",
               "DocumentMoniker": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefWebApiPL\\Controllers\\ImageController.cs",
               "RelativeDocumentMoniker": "CouchChefWebApiPL\\Controllers\\ImageController.cs",
@@ -265,23 +328,12 @@
               "RelativeToolTip": "CouchChefWebApiPL\\Controllers\\ImageController.cs",
               "ViewState": "AgIAADQAAAAAAAAAAAAuwAQAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T10:52:14.569Z"
+              "WhenOpened": "2025-05-10T10:52:14.569Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FileController.cs",
-              "DocumentMoniker": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefWebApiPL\\Controllers\\FileController.cs",
-              "RelativeDocumentMoniker": "CouchChefWebApiPL\\Controllers\\FileController.cs",
-              "ToolTip": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefWebApiPL\\Controllers\\FileController.cs",
-              "RelativeToolTip": "CouchChefWebApiPL\\Controllers\\FileController.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAIwBAAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T18:53:32.333Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 25,
               "Title": "CuisineController.cs",
               "DocumentMoniker": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefWebApiPL\\Controllers\\CuisineController.cs",
               "RelativeDocumentMoniker": "CouchChefWebApiPL\\Controllers\\CuisineController.cs",
@@ -293,7 +345,82 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
+              "Title": "MigrationManager.cs",
+              "DocumentMoniker": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefWebApiPL\\Configurations\\MigrationManager.cs",
+              "RelativeDocumentMoniker": "CouchChefWebApiPL\\Configurations\\MigrationManager.cs",
+              "ToolTip": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefWebApiPL\\Configurations\\MigrationManager.cs",
+              "RelativeToolTip": "CouchChefWebApiPL\\Configurations\\MigrationManager.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAUwBEAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T14:01:51.588Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ImageDTO.cs",
+              "DocumentMoniker": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefBLL\\DTOs\\ImageDTO.cs",
+              "RelativeDocumentMoniker": "CouchChefBLL\\DTOs\\ImageDTO.cs",
+              "ToolTip": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefBLL\\DTOs\\ImageDTO.cs",
+              "RelativeToolTip": "CouchChefBLL\\DTOs\\ImageDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T09:32:48.943Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CouchChefDbContext.cs",
+              "DocumentMoniker": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefDAL\\Data\\CouchChefDbContext.cs",
+              "RelativeDocumentMoniker": "CouchChefDAL\\Data\\CouchChefDbContext.cs",
+              "ToolTip": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefDAL\\Data\\CouchChefDbContext.cs",
+              "RelativeToolTip": "CouchChefDAL\\Data\\CouchChefDbContext.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAkwE4AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T10:41:02.836Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "FileController.cs",
+              "DocumentMoniker": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefWebApiPL\\Controllers\\FileController.cs",
+              "RelativeDocumentMoniker": "CouchChefWebApiPL\\Controllers\\FileController.cs",
+              "ToolTip": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefWebApiPL\\Controllers\\FileController.cs",
+              "RelativeToolTip": "CouchChefWebApiPL\\Controllers\\FileController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAIwBAAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T18:53:32.333Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefWebApiPL\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "CouchChefWebApiPL\\appsettings.Development.json",
+              "ToolTip": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefWebApiPL\\appsettings.Development.json",
+              "RelativeToolTip": "CouchChefWebApiPL\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-13T06:36:39.696Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefWebApiPL\\Program.cs",
+              "RelativeDocumentMoniker": "CouchChefWebApiPL\\Program.cs",
+              "ToolTip": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefWebApiPL\\Program.cs",
+              "RelativeToolTip": "CouchChefWebApiPL\\Program.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAASwEwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T10:17:17.676Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "docker-compose.yml",
               "DocumentMoniker": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\docker-compose.yml",
               "RelativeDocumentMoniker": "docker-compose.yml",
@@ -306,7 +433,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
+              "Title": "CouchChefWebApiPL.http",
+              "DocumentMoniker": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefWebApiPL\\CouchChefWebApiPL.http",
+              "RelativeDocumentMoniker": "CouchChefWebApiPL\\CouchChefWebApiPL.http",
+              "ToolTip": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefWebApiPL\\CouchChefWebApiPL.http",
+              "RelativeToolTip": "CouchChefWebApiPL\\CouchChefWebApiPL.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-05-13T06:36:45.986Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "RecipeCategory.cs",
               "DocumentMoniker": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefDAL\\Entities\\RecipeCategory.cs",
               "RelativeDocumentMoniker": "CouchChefDAL\\Entities\\RecipeCategory.cs",
@@ -318,7 +457,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 16,
               "Title": "AdviseController.cs",
               "DocumentMoniker": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefWebApiPL\\Controllers\\AdviseController.cs",
               "RelativeDocumentMoniker": "CouchChefWebApiPL\\Controllers\\AdviseController.cs",
@@ -330,19 +469,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefWebApiPL\\Program.cs",
-              "RelativeDocumentMoniker": "CouchChefWebApiPL\\Program.cs",
-              "ToolTip": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefWebApiPL\\Program.cs",
-              "RelativeToolTip": "CouchChefWebApiPL\\Program.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAADwv0MAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T10:17:17.676Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 14,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefWebApiPL\\appsettings.json",
               "RelativeDocumentMoniker": "CouchChefWebApiPL\\appsettings.json",
@@ -354,19 +481,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "IngredientController.cs",
-              "DocumentMoniker": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefWebApiPL\\Controllers\\IngredientController.cs",
-              "RelativeDocumentMoniker": "CouchChefWebApiPL\\Controllers\\IngredientController.cs",
-              "ToolTip": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefWebApiPL\\Controllers\\IngredientController.cs",
-              "RelativeToolTip": "CouchChefWebApiPL\\Controllers\\IngredientController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T09:28:38.864Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 22,
               "Title": "CuisineService.cs",
               "DocumentMoniker": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefBLL\\Services\\CuisineService.cs",
               "RelativeDocumentMoniker": "CouchChefBLL\\Services\\CuisineService.cs",
@@ -378,7 +493,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 17,
               "Title": "CategoryService.cs",
               "DocumentMoniker": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefBLL\\Services\\CategoryService.cs",
               "RelativeDocumentMoniker": "CouchChefBLL\\Services\\CategoryService.cs",
@@ -390,7 +505,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 21,
               "Title": "RecipeController.cs",
               "DocumentMoniker": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefWebApiPL\\Controllers\\RecipeController.cs",
               "RelativeDocumentMoniker": "CouchChefWebApiPL\\Controllers\\RecipeController.cs",
@@ -402,7 +517,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 23,
               "Title": "ImageService.cs",
               "DocumentMoniker": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefBLL\\Services\\ImageService.cs",
               "RelativeDocumentMoniker": "CouchChefBLL\\Services\\ImageService.cs",
@@ -414,7 +529,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 20,
               "Title": "RecipeService.cs",
               "DocumentMoniker": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefBLL\\Services\\RecipeService.cs",
               "RelativeDocumentMoniker": "CouchChefBLL\\Services\\RecipeService.cs",
@@ -426,7 +541,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 24,
               "Title": "IRecipeService.cs",
               "DocumentMoniker": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefBLL\\Interfaces\\IRecipeService.cs",
               "RelativeDocumentMoniker": "CouchChefBLL\\Interfaces\\IRecipeService.cs",
@@ -438,7 +553,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 26,
               "Title": "CategoryController.cs",
               "DocumentMoniker": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefWebApiPL\\Controllers\\CategoryController.cs",
               "RelativeDocumentMoniker": "CouchChefWebApiPL\\Controllers\\CategoryController.cs",
@@ -450,7 +565,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 27,
               "Title": "GetRecipeDTO.cs",
               "DocumentMoniker": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefBLL\\DTOs\\Get\\GetRecipeDTO.cs",
               "RelativeDocumentMoniker": "CouchChefBLL\\DTOs\\Get\\GetRecipeDTO.cs",
@@ -462,7 +577,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 28,
               "Title": "Recipe.cs",
               "DocumentMoniker": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefDAL\\Entities\\Recipe.cs",
               "RelativeDocumentMoniker": "CouchChefDAL\\Entities\\Recipe.cs",
@@ -474,7 +589,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 33,
               "Title": "Category.cs",
               "DocumentMoniker": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefDAL\\Entities\\Category.cs",
               "RelativeDocumentMoniker": "CouchChefDAL\\Entities\\Category.cs",
@@ -486,7 +601,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 32,
               "Title": "Cuisine.cs",
               "DocumentMoniker": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefDAL\\Entities\\Cuisine.cs",
               "RelativeDocumentMoniker": "CouchChefDAL\\Entities\\Cuisine.cs",
@@ -498,7 +613,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 31,
               "Title": "Image.cs",
               "DocumentMoniker": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefDAL\\Entities\\Image.cs",
               "RelativeDocumentMoniker": "CouchChefDAL\\Entities\\Image.cs",
@@ -510,19 +625,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "IngredientService.cs",
-              "DocumentMoniker": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefBLL\\Services\\IngredientService.cs",
-              "RelativeDocumentMoniker": "CouchChefBLL\\Services\\IngredientService.cs",
-              "ToolTip": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefBLL\\Services\\IngredientService.cs",
-              "RelativeToolTip": "CouchChefBLL\\Services\\IngredientService.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAgwDEAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T11:11:56.914Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 34,
               "Title": "BaseEntity.cs",
               "DocumentMoniker": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefDAL\\Entities\\BaseEntity.cs",
               "RelativeDocumentMoniker": "CouchChefDAL\\Entities\\BaseEntity.cs",
@@ -534,19 +637,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "IIngredientService.cs",
-              "DocumentMoniker": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefBLL\\Interfaces\\IIngredientService.cs",
-              "RelativeDocumentMoniker": "CouchChefBLL\\Interfaces\\IIngredientService.cs",
-              "ToolTip": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefBLL\\Interfaces\\IIngredientService.cs",
-              "RelativeToolTip": "CouchChefBLL\\Interfaces\\IIngredientService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T11:07:08.728Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 30,
               "Title": "RecipeIngredientDetail.cs",
               "DocumentMoniker": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefDAL\\Entities\\RecipeIngredientDetail.cs",
               "RelativeDocumentMoniker": "CouchChefDAL\\Entities\\RecipeIngredientDetail.cs",
@@ -558,7 +649,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 29,
               "Title": "Ingredient.cs",
               "DocumentMoniker": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefDAL\\Entities\\Ingredient.cs",
               "RelativeDocumentMoniker": "CouchChefDAL\\Entities\\Ingredient.cs",
@@ -570,7 +661,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 36,
               "Title": "IImageService.cs",
               "DocumentMoniker": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefBLL\\Interfaces\\IImageService.cs",
               "RelativeDocumentMoniker": "CouchChefBLL\\Interfaces\\IImageService.cs",
@@ -582,7 +673,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 35,
               "Title": "Advise.cs",
               "DocumentMoniker": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefDAL\\Entities\\Advise.cs",
               "RelativeDocumentMoniker": "CouchChefDAL\\Entities\\Advise.cs",
@@ -594,7 +685,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 37,
               "Title": "SettingStrings.cs",
               "DocumentMoniker": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefWebApiPL\\SettingStrings.cs",
               "RelativeDocumentMoniker": "CouchChefWebApiPL\\SettingStrings.cs",
@@ -606,19 +697,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "StaticFileService.cs",
-              "DocumentMoniker": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefBLL\\Services\\StaticFileService.cs",
-              "RelativeDocumentMoniker": "CouchChefBLL\\Services\\StaticFileService.cs",
-              "ToolTip": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefBLL\\Services\\StaticFileService.cs",
-              "RelativeToolTip": "CouchChefBLL\\Services\\StaticFileService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T10:02:06.82Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 39,
               "Title": "StaticFileSettings.cs",
               "DocumentMoniker": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefBLL\\Configurations\\StaticFileSettings.cs",
               "RelativeDocumentMoniker": "CouchChefBLL\\Configurations\\StaticFileSettings.cs",
@@ -630,7 +709,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 38,
               "Title": "CorsSettings.cs",
               "DocumentMoniker": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefWebApiPL\\Configurations\\CorsSettings.cs",
               "RelativeDocumentMoniker": "CouchChefWebApiPL\\Configurations\\CorsSettings.cs",
@@ -642,19 +721,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "MigrationManager.cs",
-              "DocumentMoniker": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefWebApiPL\\Configurations\\MigrationManager.cs",
-              "RelativeDocumentMoniker": "CouchChefWebApiPL\\Configurations\\MigrationManager.cs",
-              "ToolTip": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefWebApiPL\\Configurations\\MigrationManager.cs",
-              "RelativeToolTip": "CouchChefWebApiPL\\Configurations\\MigrationManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAswA8AAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T14:01:51.588Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 40,
               "Title": "20250510080746_Initial.cs",
               "DocumentMoniker": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefDAL\\Migrations\\20250510080746_Initial.cs",
               "RelativeDocumentMoniker": "CouchChefDAL\\Migrations\\20250510080746_Initial.cs",
@@ -666,19 +733,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "ImageDTO.cs",
-              "DocumentMoniker": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefBLL\\DTOs\\ImageDTO.cs",
-              "RelativeDocumentMoniker": "CouchChefBLL\\DTOs\\ImageDTO.cs",
-              "ToolTip": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefBLL\\DTOs\\ImageDTO.cs",
-              "RelativeToolTip": "CouchChefBLL\\DTOs\\ImageDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T09:32:48.943Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 42,
               "Title": "Dockerfile",
               "DocumentMoniker": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefWebApiPL\\Dockerfile",
               "RelativeDocumentMoniker": "CouchChefWebApiPL\\Dockerfile",
@@ -690,7 +745,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 41,
               "Title": "Microsoft.VisualStudio.Docker.Compose.targets",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\MSBuild\\Sdks\\Microsoft.Docker.Sdk\\build\\Microsoft.VisualStudio.Docker.Compose.targets",
               "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\MSBuild\\Sdks\\Microsoft.Docker.Sdk\\build\\Microsoft.VisualStudio.Docker.Compose.targets",
@@ -700,19 +755,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "IStaticFileService.cs",
-              "DocumentMoniker": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefBLL\\Interfaces\\IStaticFileService.cs",
-              "RelativeDocumentMoniker": "CouchChefBLL\\Interfaces\\IStaticFileService.cs",
-              "ToolTip": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefBLL\\Interfaces\\IStaticFileService.cs",
-              "RelativeToolTip": "CouchChefBLL\\Interfaces\\IStaticFileService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T10:01:24.302Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 43,
               "Title": "CouchChefWebApiPL.csproj",
               "DocumentMoniker": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefWebApiPL\\CouchChefWebApiPL.csproj",
               "RelativeDocumentMoniker": "CouchChefWebApiPL\\CouchChefWebApiPL.csproj",
@@ -724,7 +767,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 44,
               "Title": "ICategoryService.cs",
               "DocumentMoniker": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefBLL\\Interfaces\\ICategoryService.cs",
               "RelativeDocumentMoniker": "CouchChefBLL\\Interfaces\\ICategoryService.cs",
@@ -736,7 +779,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 46,
               "Title": "CouchChefDAL.csproj",
               "DocumentMoniker": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefDAL\\CouchChefDAL.csproj",
               "RelativeDocumentMoniker": "CouchChefDAL\\CouchChefDAL.csproj",
@@ -748,7 +791,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 45,
               "Title": "CuisineDTO.cs",
               "DocumentMoniker": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefBLL\\DTOs\\CuisineDTO.cs",
               "RelativeDocumentMoniker": "CouchChefBLL\\DTOs\\CuisineDTO.cs",
@@ -760,7 +803,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 47,
               "Title": "ICuisineService.cs",
               "DocumentMoniker": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefBLL\\Interfaces\\ICuisineService.cs",
               "RelativeDocumentMoniker": "CouchChefBLL\\Interfaces\\ICuisineService.cs",
@@ -772,7 +815,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 49,
               "Title": "IAdviseService.cs",
               "DocumentMoniker": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefBLL\\Interfaces\\IAdviseService.cs",
               "RelativeDocumentMoniker": "CouchChefBLL\\Interfaces\\IAdviseService.cs",
@@ -784,7 +827,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 48,
               "Title": "CategoryDTO.cs",
               "DocumentMoniker": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefBLL\\DTOs\\CategoryDTO.cs",
               "RelativeDocumentMoniker": "CouchChefBLL\\DTOs\\CategoryDTO.cs",
@@ -796,7 +839,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 50,
               "Title": "AdviseService.cs",
               "DocumentMoniker": "D:\\Learning\\University2\\ISandTP\\CouchChef\\src\\CouchChefBackend\\CouchChefBLL\\Services\\AdviseService.cs",
               "RelativeDocumentMoniker": "CouchChefBLL\\Services\\AdviseService.cs",
