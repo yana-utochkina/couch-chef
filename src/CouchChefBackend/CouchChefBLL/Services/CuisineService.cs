@@ -1,4 +1,4 @@
-﻿using CouchChefBLL.DTOs;
+﻿using CouchChefBLL.DTOs.Get;
 using CouchChefBLL.Interfaces;
 using CouchChefDAL.Data;
 using CouchChefDAL.Entities;
@@ -15,7 +15,7 @@ public class CuisineService : ICuisineService
         _context = context;
     }
 
-    public async Task<int> AddCuisineAsync(CuisineDTO cuisineDTO)
+    public async Task<int> AddCuisineAsync(GetCuisineDTO cuisineDTO)
     {
         var cuisine = new Cuisine
         {
@@ -35,10 +35,10 @@ public class CuisineService : ICuisineService
         await _context.SaveChangesAsync();
     }
 
-    public async Task<List<CuisineDTO>> GelAllCuisinesAsync()
+    public async Task<List<GetCuisineDTO>> GelAllCuisinesAsync()
     {
         var cuisines = await _context.Cuisines.ToListAsync();
-        var cuisineDTOs = cuisines.Select(x => new CuisineDTO
+        var cuisineDTOs = cuisines.Select(x => new GetCuisineDTO
         {
             Id = x.Id,
             Name = x.Name,
@@ -47,10 +47,10 @@ public class CuisineService : ICuisineService
         return cuisineDTOs;
     }
 
-    public async Task<CuisineDTO> GetCuisineAsync(int id)
+    public async Task<GetCuisineDTO> GetCuisineAsync(int id)
     {
         var cuisine = await GetCuisineByIdAsync(id);
-        CuisineDTO cuisineDTO = new CuisineDTO
+        GetCuisineDTO cuisineDTO = new GetCuisineDTO
         {
             Id = cuisine.Id,
             Name = cuisine.Name,
@@ -59,7 +59,7 @@ public class CuisineService : ICuisineService
         return cuisineDTO;
     }
 
-    public async Task UpdateCuisineAsync(int id, CuisineDTO cuisineDTO)
+    public async Task UpdateCuisineAsync(int id, GetCuisineDTO cuisineDTO)
     {
         var cuisine = await GetCuisineByIdAsync(id);
         cuisine.Name = cuisineDTO.Name;

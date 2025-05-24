@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CouchChefDAL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dc08a7beb69d12c2fc9a1ffa2f499ea68dc6cd08")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+44637b4b69ce2cf651da0988f6d93bfe17b8a4f5")]
 [assembly: System.Reflection.AssemblyProductAttribute("CouchChefDAL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CouchChefDAL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -16,10 +16,16 @@ export class SidebarComponent {
   );
 
   readonly routesI18: Record<string, string> = {
-    "Ingredients": "Інгредієнти"
+    "Ingredients": "Інгредієнти",
+    "Categories": "Категорії",
+    "Cuisines": "Кухні світу",
+    "Recipes": "Рецепти",
+    "Daily advises": "Щоденні поради"
   }
 
   translate(title: string) {
     return this.routesI18[title];
   }
+
+
 }

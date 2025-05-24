@@ -1,4 +1,4 @@
-﻿using CouchChefBLL.DTOs;
+﻿using CouchChefBLL.DTOs.Get;
 using CouchChefBLL.DTOs.Post;
 using CouchChefBLL.Interfaces;
 using CouchChefDAL.Data;
@@ -11,11 +11,12 @@ public class IngredientService : IIngredientService
 {
     private readonly CouchChefDbContext _context;
     private readonly IStaticFileService _staticFileService;
-
-    public IngredientService(CouchChefDbContext context, IStaticFileService staticFileService)
+    private readonly IImageService _imageService;
+    public IngredientService(CouchChefDbContext context, IStaticFileService staticFileService, IImageService imageService)
     {
         _context = context;
         _staticFileService = staticFileService;
+        _imageService = imageService;
     }
 
     public async Task<PostIngredientDTO> CreateIngredientAsync(PostIngredientDTO postIngredientDTO)
@@ -26,7 +27,7 @@ public class IngredientService : IIngredientService
             await using var transaction = await _context.Database.BeginTransactionAsync();
             try
             {
-                var image = await AddImageAsync(postIngredientDTO.PostImageDTO);
+                var image = await _imageService.AddImageAsync(postIngredientDTO.PostImageDTO);
                 postIngredientDTO.PostImageDTO.Id = image.Id;
                 imagePath = image.Path;
 
@@ -56,10 +57,10 @@ public class IngredientService : IIngredientService
         await _context.SaveChangesAsync();
     }
 
-    public async Task<List<IngredientDTO>> GetAllAsync()
+    public async Task<List<GetIngredientDTO>> GetAllAsync()
     {
         var ingredients = await _context.Ingredients.ToListAsync();
-        var ingredientDTOs = ingredients.Select(x => new IngredientDTO
+        var ingredientDTOs = ingredients.Select(x => new GetIngredientDTO
         {
             Id = x.Id,
             Name = x.Name,
@@ -73,10 +74,10 @@ public class IngredientService : IIngredientService
         return ingredientDTOs;
     }
 
-    public async Task<IngredientDTO> GetIngredientAsync(int id)
+    public async Task<GetIngredientDTO> GetIngredientAsync(int id)
     {
         var ingredient = await GetIngredientByIdAsync(id);
-        var ingredientDTO = new IngredientDTO
+        var ingredientDTO = new GetIngredientDTO
         {
             Id = ingredient.Id,
             Name = ingredient.Name,
@@ -89,7 +90,7 @@ public class IngredientService : IIngredientService
         };
         if (ingredient.Image is not null)
         {
-            ingredientDTO.ImageDTO = new ImageDTO
+            ingredientDTO.GetImageDTO = new GetImageDTO
             {
                 Id = ingredient.Image.Id,
                 Path = ingredient.Image.Path,
@@ -114,7 +115,7 @@ public class IngredientService : IIngredientService
         if (postIngredientDTO.IsImageNotNull())
         {
             await _staticFileService.UploadAsync(postIngredientDTO.PostImageDTO.Image, false);
-            var image =   await AddImageAsync(postIngredientDTO.PostImageDTO);
+            var image =   await _imageService.AddImageAsync(postIngredientDTO.PostImageDTO);
             postIngredientDTO.PostImageDTO.Id = image.Id;
 
             postIngredientDTO.Id = await AddIngredientAsync(postIngredientDTO);
@@ -145,19 +146,6 @@ public class IngredientService : IIngredientService
         if (ingredient is null)
             throw new KeyNotFoundException($"Ingredient with id {id} not found.");
         return ingredient;
-    }
-
-    private async Task<Image> AddImageAsync(PostImageDTO postImageDTO)
-    {
-        var path = await _staticFileService.UploadAsync(postImageDTO.Image, false);
-        var image = new Image
-        {
-            Path = path,
-            AlternativeText = postImageDTO.AlternativeText
-        };
-        await _context.AddAsync(image);
-        await _context.SaveChangesAsync();
-        return image;
     }
 
     private async Task<int> AddIngredientAsync(PostIngredientDTO postIngredientDTO)

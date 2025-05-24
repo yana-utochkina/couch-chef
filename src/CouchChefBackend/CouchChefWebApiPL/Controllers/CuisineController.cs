@@ -1,4 +1,4 @@
-﻿using CouchChefBLL.DTOs;
+﻿using CouchChefBLL.DTOs.Get;
 using CouchChefBLL.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
@@ -16,7 +16,7 @@ public class CuisineController : ControllerBase
     }
 
     [HttpGet]
-    public async Task<ActionResult<List<CuisineDTO>>> GetAllCuisines()
+    public async Task<ActionResult<List<GetCuisineDTO>>> GetAllCuisines()
     {
         try
         {
@@ -30,12 +30,12 @@ public class CuisineController : ControllerBase
     }
 
     [HttpGet("{id}")]
-    public async Task<ActionResult<CuisineDTO>> GetCuisine(int id)
+    public async Task<ActionResult<GetCuisineDTO>> GetCuisine(int id)
     {
         try
         {
             var cuisine = await _cuisineService.GetCuisineAsync(id);
-            var cuisineDTO = new CuisineDTO
+            var cuisineDTO = new GetCuisineDTO
             {
                 Id = cuisine.Id,
                 Name = cuisine.Name,
@@ -51,7 +51,7 @@ public class CuisineController : ControllerBase
 
 
     [HttpPost]
-    public async Task<ActionResult<CuisineDTO>> CreateCuisine([FromBody] CuisineDTO cuisineDTO)
+    public async Task<ActionResult<GetCuisineDTO>> CreateCuisine([FromBody] GetCuisineDTO cuisineDTO)
     {
         try
         {
@@ -66,7 +66,7 @@ public class CuisineController : ControllerBase
     }
 
     [HttpPut("{id}")]
-    public async Task<ActionResult<CuisineDTO>> UpdateCuisine(int id, [FromBody] CuisineDTO cuisineDTO)
+    public async Task<ActionResult<GetCuisineDTO>> UpdateCuisine(int id, [FromBody] GetCuisineDTO cuisineDTO)
     {
         try
         {

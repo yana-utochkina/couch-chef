@@ -1,4 +1,4 @@
-﻿using CouchChefBLL.DTOs;
+﻿using CouchChefBLL.DTOs.Get;
 using CouchChefBLL.DTOs.Post;
 
 namespace CouchChefBLL.Interfaces;
@@ -6,8 +6,8 @@ namespace CouchChefBLL.Interfaces;
 public interface IIngredientService
 {
     Task<PostIngredientDTO> CreateIngredientAsync(PostIngredientDTO postIngredientDTO);
-    Task<IngredientDTO> GetIngredientAsync(int id);
-    Task<List<IngredientDTO>> GetAllAsync();
+    Task<GetIngredientDTO> GetIngredientAsync(int id);
+    Task<List<GetIngredientDTO>> GetAllAsync();
     Task DeleteIngredientAsync(int id);
     Task <PostIngredientDTO>UpdateIngredientAsync(int id, PostIngredientDTO postIngredientDTO);
 }

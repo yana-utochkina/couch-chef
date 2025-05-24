@@ -1,0 +1,9 @@
+<div class="modal">
+    <div class="modal-content">
+        <form [formGroup]="form">
+            <input [formControlName]="'name'" />
+            <button class="btn-cancel">Скасувати</button>
+            <button class="btn-primary" (click)="confirm()">Зберегти</button>
+        </form>
+    </div>
+</div>

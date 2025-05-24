@@ -1,6 +1,6 @@
-﻿namespace CouchChefBLL.DTOs;
+﻿namespace CouchChefBLL.DTOs.Get;
 
-public class ImageDTO
+public class GetImageDTO
 {
     public int Id { get; set; }
     public required string Path { get; set; }

@@ -1,4 +1,5 @@
-﻿using CouchChefBLL.DTOs;
+﻿using CouchChefBLL.DTOs.Get;
+using CouchChefBLL.DTOs.Post;
 using CouchChefBLL.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
@@ -15,7 +16,7 @@ public class ImageController : ControllerBase
     }
 
     [HttpGet]
-    public async Task<ActionResult<List<ImageDTO>>> GetAllImages()
+    public async Task<ActionResult<List<GetImageDTO>>> GetAllImages()
     {
         try
         {
@@ -29,7 +30,7 @@ public class ImageController : ControllerBase
     }
 
     [HttpGet("{id}")]
-    public async Task<ActionResult<ImageDTO>> GetImage(int id)
+    public async Task<ActionResult<GetImageDTO>> GetImage(int id)
     {
         try
         {
@@ -42,20 +43,19 @@ public class ImageController : ControllerBase
         }
     }
 
-    [HttpPost]
-    public async Task<ActionResult<ImageDTO>> CreateImage([FromBody] ImageDTO imageDTO)
-    {
-        try
-        {
-            int id = await _imageService.AddImageAsync(imageDTO);
-            imageDTO = await _imageService.GetImageAsync(id);
-            return imageDTO;
-        }
-        catch (Exception ex)
-        {
-            return BadRequest(ex.Message);
-        }
-    }
+    //[HttpPost]
+    //public async Task<ActionResult<ImageDTO>> CreateImage([FromForm] PostImageDTO postImageDTO)
+    //{
+    //    try
+    //    {
+    //        postImageDTO = await _imageService.AddImageAsync(postImageDTO);
+    //        return postImageDTO;
+    //    }
+    //    catch (Exception ex)
+    //    {
+    //        return BadRequest(ex.Message);
+    //    }
+    //}
 
     [HttpPatch("{id}")]
     public async Task<ActionResult> UpdateImage(int id, [FromQuery] string alternativeText)

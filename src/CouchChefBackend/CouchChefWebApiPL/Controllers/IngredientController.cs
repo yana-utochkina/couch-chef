@@ -1,4 +1,4 @@
-﻿using CouchChefBLL.DTOs;
+﻿using CouchChefBLL.DTOs.Get;
 using CouchChefBLL.DTOs.Post;
 using CouchChefBLL.Interfaces;
 using Microsoft.AspNetCore.Mvc;
@@ -17,7 +17,7 @@ public class IngredientController : ControllerBase
     }
 
     [HttpGet]
-    public async Task<ActionResult<List<IngredientDTO>>> GetAllIngredients()
+    public async Task<ActionResult<List<GetIngredientDTO>>> GetAllIngredients()
     {
         try
         {
@@ -31,7 +31,7 @@ public class IngredientController : ControllerBase
     }
 
     [HttpGet("{id}")]
-    public async Task<ActionResult<IngredientDTO>> GetIngredient(int id)
+    public async Task<ActionResult<GetIngredientDTO>> GetIngredient(int id)
     {
         try
         {

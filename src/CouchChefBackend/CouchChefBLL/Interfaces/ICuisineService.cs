@@ -1,12 +1,12 @@
-﻿using CouchChefBLL.DTOs;
+﻿using CouchChefBLL.DTOs.Get;
 
 namespace CouchChefBLL.Interfaces;
 
 public interface ICuisineService
 {
-    Task<List<CuisineDTO>> GelAllCuisinesAsync();
-    Task<int> AddCuisineAsync(CuisineDTO cuisineDTO);
-    Task<CuisineDTO> GetCuisineAsync(int id);
-    Task UpdateCuisineAsync(int id,  CuisineDTO cuisineDTO);
+    Task<List<GetCuisineDTO>> GelAllCuisinesAsync();
+    Task<int> AddCuisineAsync(GetCuisineDTO cuisineDTO);
+    Task<GetCuisineDTO> GetCuisineAsync(int id);
+    Task UpdateCuisineAsync(int id,  GetCuisineDTO cuisineDTO);
     Task DeleteCuisineByIdAsync(int id);
 }

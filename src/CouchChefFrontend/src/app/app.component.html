@@ -1,9 +1,11 @@
-<div class="layout-wrapper d-flex">
-    <aside class="sidebar-wrapper vh-100 col-3">
+<div class="layout-wrapper">
+    <aside [class.open]="isSidebarOpen">
         <app-sidebar />
     </aside>
-    <main class="main-content-wrapper vh-100 col-9">
+    <main class="main-content-wrapper">
+        <button class="toggle-btn" (click)="toggleSidebar()">☰</button>
+        <div class="backdrop" *ngIf="isSidebarOpen" (click)="closeSidebar()"></div>
         <!-- other content -->
-        <p *ngFor="let item of data">{{item.name}}</p>
+        <router-outlet></router-outlet>
     </main>
 </div>

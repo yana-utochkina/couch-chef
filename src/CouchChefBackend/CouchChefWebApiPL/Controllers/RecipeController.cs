@@ -1,5 +1,6 @@
-﻿using CouchChefBLL.DTOs.Get;
+﻿using CouchChefBLL.DTOs;
 using CouchChefBLL.DTOs.Post;
+using CouchChefBLL.Filters;
 using CouchChefBLL.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
@@ -16,14 +17,33 @@ public class RecipeController : ControllerBase
         _recipeService = recipeService;
     }
 
-    [HttpPost]
-    public async Task<ActionResult<GetRecipeDTO>> CreateRecipe([FromBody] PostRecipeDTO postRecipeDTO)
+    [HttpGet]
+    public async Task<ActionResult<List<RecipeDTO>>> GetRecipes([FromQuery] RecipeFilters filters)
     {
         try
         {
-            int id = await _recipeService.AddRecipeAsync(postRecipeDTO);
-            var getRecipe = await _recipeService.GetRecipeAsync(id);
-            return Ok(getRecipe);
+            var recipes = await _recipeService.GetRecipesAsync(filters);
+            return Ok(recipes);
+        }
+        catch (Exception ex)
+        {
+            return Ok(ex.Message);
+        }
+    }
+
+    [HttpGet("{id}")]
+    public Task<ActionResult<RecipeDTO>> GetRecipe(int id)
+    {
+        throw new NotImplementedException();
+    }
+
+    [HttpPost]
+    public async Task<ActionResult<PostRecipeDTO>> CreateRecipe([FromForm] PostRecipeDTO postRecipeDTO)
+    {
+        try
+        {
+            postRecipeDTO = await _recipeService.CreateRecipeAsync(postRecipeDTO);
+            return Ok(postRecipeDTO);
         }
         catch (Exception ex)
         {

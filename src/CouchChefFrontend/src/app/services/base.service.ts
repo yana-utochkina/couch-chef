@@ -8,10 +8,11 @@ export enum HTTP_METHODS {
 }
 
 export abstract class BaseService {
-  private readonly BASE_URL = "https://localhost:54277/api";
+  private readonly BASE_URL = "https://localhost:58811/api";
 
-  protected buildUrl(endpoint?: string): string {
-    return this.BASE_URL + this.baseEndpoint() + (endpoint || "");
+  protected buildUrl(endpoint: string = ""): string {
+    const normalizedEndpoint = endpoint.startsWith("/") ? endpoint : "/" + endpoint;
+    return this.BASE_URL + this.baseEndpoint() + (normalizedEndpoint);
   }
 
   protected buildQueryParams(queryParams: Record<string, any>): URLSearchParams {
@@ -24,11 +25,11 @@ export abstract class BaseService {
 
   protected buildRequestInit(
     method: HTTP_METHODS,
-    otherParams?: Record<string, any>
+    queryParams?: Record<string, any>
   ): RequestInit {
     return {
       method: method,
-      ...(otherParams || {}),
+      ...(queryParams || {}),
     };
   }
 

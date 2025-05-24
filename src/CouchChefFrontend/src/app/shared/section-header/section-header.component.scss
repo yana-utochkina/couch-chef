@@ -1,0 +1,33 @@
+h2 {
+    color: #604652;
+    margin-top: 3px;
+    margin-left: 10px;
+}
+
+div {
+    display: flex;
+    justify-content: space-between;
+}
+
+hr {
+    margin-top: 10px;
+    border: 1px solid #604652;
+}
+
+button {
+    background-color: #604652;
+    border: none;
+    color: white;
+    padding: 6px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    transition-duration: 0.2s;
+    border-radius: 2px;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #735557;
+    //color: #604652;
+}

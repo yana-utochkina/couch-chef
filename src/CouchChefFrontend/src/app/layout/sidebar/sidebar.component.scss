@@ -2,6 +2,7 @@
     padding: 10px 0;
     text-align: center;
     color: #F7F7F7 !important;
+    flex: 0 0 400px;
 
     h1 {
         font-family: "Ibarra Real Nova" !important;
@@ -12,17 +13,21 @@
 
     hr {
         border-top: 1px solid #f7f7f7 !important;
+        margin-top: 10px;
+        margin-bottom: 5px;
         opacity: 1;
     }
 
     ul {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
         list-style: none;
     }
 
     li {
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 24px;
-        font-weight: 300;
+        margin-top: 10px;
 
         a {
             color: #F7F7F7;

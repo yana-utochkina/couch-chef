@@ -1,0 +1,8 @@
+<ng-container [ngSwitch]="name">
+    <img *ngSwitchCase="'details'" [attr.width]="size" [attr.height]="size" src="../../../assets/icons/details.svg"
+        alt="Details">
+    <img *ngSwitchCase="'edit'" [attr.width]="size" [attr.height]="size" src="../../../assets/icons/edit.svg"
+        alt="Edit">
+    <img *ngSwitchCase="'delete'" [attr.width]="size" [attr.height]="size" src="../../../assets/icons/delete.svg"
+        alt="Delete">
+</ng-container>

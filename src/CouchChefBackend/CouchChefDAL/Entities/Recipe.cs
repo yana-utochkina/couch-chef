@@ -14,4 +14,9 @@ public class Recipe : BaseEntity
     public required virtual Image Image { get; set; }
     public required virtual List<RecipeCategory> RecipeCategories { get; set; }
     public required virtual List<RecipeIngredientDetail> RecipeIngredientDetails { get; set; }
+
+    public static float CountCalories(float protein, float fat, float carbs)
+    {
+        return protein * 4 + fat * 9 + carbs * 4;
+    }
 }

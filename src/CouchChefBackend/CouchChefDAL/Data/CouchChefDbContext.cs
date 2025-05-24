@@ -76,17 +76,17 @@ public class CouchChefDbContext : DbContext
         builder.HasOne(rc => rc.Category)
             .WithMany(category => category.RecipeCategories)
             .HasForeignKey(rc => rc.CategoryId);
-        builder.HasOne(rc => rc.Recipe)
-            .WithMany(recipe => recipe.RecipeCategories)
-            .HasForeignKey(rc => rc.RecipeId);
+        //builder.HasOne(rc => rc.Recipe)
+        //    .WithMany(recipe => recipe.RecipeCategories)
+        //    .HasForeignKey(rc => rc.RecipeId);
     }
 
     private void RecipeIngredientDetailConfigure(EntityTypeBuilder<RecipeIngredientDetail> builder)
     {
-        builder.HasOne(rid => rid.Recipe)
-            .WithMany(recipe => recipe.RecipeIngredientDetails)
-            .HasForeignKey(rid => rid.RecipeId)
-            .OnDelete(DeleteBehavior.NoAction);
+        //builder.HasOne(rid => rid.Recipe)
+        //    .WithMany(recipe => recipe.RecipeIngredientDetails)
+        //    .HasForeignKey(rid => rid.RecipeId)
+        //    .OnDelete(DeleteBehavior.NoAction);
         builder.HasOne(rid => rid.Ingredient)
             .WithMany(ingredient => ingredient.RecipeIngredientDetails)
             .HasForeignKey(rid => rid.IngredientId)

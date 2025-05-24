@@ -1,8 +1,8 @@
 ﻿using CouchChefDAL.Entities;
 
-namespace CouchChefBLL.DTOs;
+namespace CouchChefBLL.DTOs.Get;
 
-public class CuisineDTO
+public class GetCuisineDTO
 {
     public int Id { get; set; }
     public required string Name { get; set; }

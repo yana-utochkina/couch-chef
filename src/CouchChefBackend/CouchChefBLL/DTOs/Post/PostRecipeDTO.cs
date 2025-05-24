@@ -11,14 +11,17 @@ public class PostRecipeDTO
     public required string Directions { get; set; }
     public int ImageId { get; set; }
     public required PostImageDTO PostImageDTO { get; set; }
-    public required List<int> IngredientIds { get; set; }
     public required List<int> CategoryIds { get; set; }
+    public required List<PostRecipeIngredientDetailDTO> RecipeIngredientDetailDTOs { get; set; }
 
     public bool IsValid()
     {
-        return CategoryIds.Count() > 0
-            && IngredientIds.Count() > 0
-            && Servings > 0 
+        return Servings > 0
             && PrepareTime.IsBetween(TimeOnly.MinValue, TotalTime);
+    }
+
+    public bool IsImageNotNull()
+    {
+        return this.PostImageDTO is not null ? this.PostImageDTO.IsNotNull() : false;
     }
 }
